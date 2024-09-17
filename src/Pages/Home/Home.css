@@ -1,0 +1,40 @@
+.home_container_1{
+    height: 100vh;
+    background:  #020D19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container 1 content */
+
+.greeting{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container_1_heading{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140px;
+    letter-spacing: 1.92px;
+}
+
+.container_1_description{
+    color: #E6E6E6;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
