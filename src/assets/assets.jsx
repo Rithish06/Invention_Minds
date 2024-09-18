@@ -9,6 +9,10 @@ import HomeContainerImg5 from './images/home_c2_img_5.png'
 import HomeContainerImg6 from './images/home_c2_img_6.png'
 import HomeContainerImg7 from './images/home_c2_img_7.png'
 import HomeContainerImg8 from './images/home_c2_img_8.png'
+import HomeDigitalMarketing from './images/home_digital_marketing.png'
+import HomeSEO from './images/home_seo.png'
+import HomeWebdesign from './images/home_webdesign.png'
+import HomeUiUx from './images/home_ui_ux.png'
 
 export const assets = {
     logo,
@@ -21,4 +25,8 @@ export const assets = {
     HomeContainerImg6,
     HomeContainerImg7,
     HomeContainerImg8,
+    HomeDigitalMarketing,
+    HomeSEO,
+    HomeWebdesign,
+    HomeUiUx
 }
