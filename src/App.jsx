@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import RouterOutlet from './Components/Router/Router'
+import Accordion from './Components/Accordion/Accordion'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <RouterOutlet />
       <Footer />
+      {/* <Accordion /> */}
     </div>
   )
 }

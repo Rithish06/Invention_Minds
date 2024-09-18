@@ -211,6 +211,13 @@
     }
 }
 
+/* container 4 */
+
+.home_container_4{
+    background-color: #020D19;
+}
+
+
 
 @media (max-width : 800px){
     .Home_bg_circle{
