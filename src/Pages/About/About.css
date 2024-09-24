@@ -1,0 +1,89 @@
+.about_container{
+    background-image: url('../../assets/images/AboutUsBg.png');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center; 
+    overflow: hidden;
+}
+
+.about_container_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 150px; */
+    margin-top: 50px;
+    height: 100vh;
+}
+
+.About_Banner_content{
+    color: #FFF;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.About_banner_description{
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 10px;
+    width: 873px;
+}
+
+.AboutBannerImg{
+    width: 629px;
+    animation: Banner 90s linear infinite;
+    margin-top: 50px;
+}
+
+@keyframes Banner{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* conatiner 2 */
+
+.about_container_2{
+    padding: 0 8%;
+}
+
+.container_2_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.box_1_heading{
+    color: #FFF;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85.5%; /* 109.44px */
+    text-transform: uppercase;
+}
+
+.box_1_heading span{
+    font-size: 96px;
+}
+
+
+.box_image img{
+    width: 368px;
+    height: auto;
+}

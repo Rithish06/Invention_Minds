@@ -66,9 +66,9 @@ const Home = () => {
             </div>
         </div>
     </div>
-    <div className="home_container_4">
+    {/* <div className="home_container_4"> */}
       <Accordion />
-    </div>
+    {/* </div>  */}
     </>
   )
 }

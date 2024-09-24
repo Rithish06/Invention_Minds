@@ -177,7 +177,6 @@
 .container_2_images{
     width: 230px;
     height: auto;
-    /* margin-top: 20px; */
 }
 
 .container_2_slide_1{
@@ -213,9 +212,6 @@
 
 /* container 4 */
 
-.home_container_4{
-    background-color: #020D19;
-}
 
 
 
@@ -263,5 +259,24 @@
 
     .container_1_btn{
         padding: 8px 10px;
+    }
+
+    /* container 2 */
+
+    .home_container_2_heading{
+        font-size: 26px;
+    }
+
+    .container_2_para{
+        font-size: 12px;
+    }
+
+    .container_2_images{
+        width: 80px;
+        height: auto;
+    }
+
+    .container_2_images{
+        gap: 20px;
     }
 }
