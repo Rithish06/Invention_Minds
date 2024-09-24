@@ -1,10 +1,10 @@
 import React,{useState, useEffect, useMemo} from 'react'
 import './Heroics.css'
-import SandeepSir from '../../assets/Images/Sandeep.png'
-import Tejaswini from '../../assets/Images/Tejaswini.png'
-import Nithish from '../../assets/Images/Nithish.png'
-import Rithish from '../../assets/Images/Rithish.png'
-import Keerthu from '../../assets/Images/Keerthu.png'
+import SandeepSir from '../../assets/images/Sandeep.png'
+import Tejaswini from '../../assets/images/Tejaswini.png'
+import Nithish from '../../assets/images/Nithish.png'
+import Rithish from '../../assets/images/Rithish.png'
+import Keerthu from '../../assets/images/Keerthu.png'
 
 
 const Heroics = () => {
