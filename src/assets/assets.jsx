@@ -13,6 +13,10 @@ import HomeDigitalMarketing from './images/home_digital_marketing.png'
 import HomeSEO from './images/home_seo.png'
 import HomeWebdesign from './images/home_webdesign.png'
 import HomeUiUx from './images/home_ui_ux.png'
+import AboutContainer1Img from './images/AboutUsContainer1Img.png'
+import Astronaut from './images/Austronaut.png'
+import Mission from './images/Mission.png'
+import Vission from './images/Vision.png'
 
 export const assets = {
     logo,
@@ -28,5 +32,9 @@ export const assets = {
     HomeDigitalMarketing,
     HomeSEO,
     HomeWebdesign,
-    HomeUiUx
+    HomeUiUx,
+    AboutContainer1Img,
+    Astronaut,
+    Mission,
+    Vission
 }

@@ -42,7 +42,9 @@ const Accordion = () => {
     const [accordion_3, setAccordion3] = useState(false)
     const [accordion_4, setAccordion4] = useState(false)
     const [activeContent, setActiveContent] = useState("digitalMarketing")
-    const [fadeInClass, setFadeInClass] = useState("");
+    const [fadeInClass, setFadeInClass] = useState();
+    const [buttonColor, setButtonColor] = useState("#430E15")
+
 
     const Slide_1 = () => {
         setAccordion1(true)
@@ -50,6 +52,7 @@ const Accordion = () => {
         setAccordion3(false)
         setAccordion4(false)
         setActiveContent("digitalMarketing")
+        setButtonColor("#430E15")
     }
     const Slide_2 = () => {
         setAccordion1(false)
@@ -57,6 +60,8 @@ const Accordion = () => {
         setAccordion3(false)
         setAccordion4(false)
         setActiveContent("websiteDevelopment")
+        setButtonColor("#6B5B50")
+        setFadeInClass({opacity : "1", trasition : "1s"})
     }
 
     const Slide_3 = () => {
@@ -65,6 +70,7 @@ const Accordion = () => {
         setAccordion3(true)
         setAccordion4(false)
         setActiveContent("seo")
+        setButtonColor("#7D7D58")
     }
 
     const Slide_4 = () => {
@@ -72,7 +78,20 @@ const Accordion = () => {
         setAccordion2(false)
         setAccordion3(false)
         setAccordion4(true)
+        setActiveContent("UiUx")
+        setButtonColor("#081927")
     }
+
+
+    // const fadeIn = () => {
+    //   setFadeInClass(true)
+    // }
+
+    // useEffect(() => {
+    //   fadeIn();
+
+    //   return () => setFadeInClass(false)
+    // })
 
   return (
     <div className='accordian'>
@@ -118,16 +137,15 @@ const Accordion = () => {
                 </div>
             </div>
             {/* right side */}
-            <div className={`container_4_right_side ${fadeInClass}`}>
+            <div className="container_4_right_side" style = {{fadeInClass}}>
                 <div className="container_4_right_content">
                     <div className={`services_heading`}>{content[activeContent].title}</div>
                     <div className="para_1">{content[activeContent].para_1}</div>
                     <div className="para_1">{content[activeContent].para_2}</div>
-
+                    <button className={`services_exploremore`} style={{backgroundColor : buttonColor, transitionDuration : '1s'}}>Explore More</button>
                 </div>
             </div>
         </div>
-
     </div>
   )
 }

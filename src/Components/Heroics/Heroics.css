@@ -1,0 +1,109 @@
+.Heroics{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    background-color: transparent;
+    padding: 2%;
+    overflow-x: hidden;
+}
+
+.Heroic_container{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.heroics_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Meet_Heroics{
+    color: #fff;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+}
+
+.heroicNames{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heroicDesignation{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.heroicBriefProfile{
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.images{
+    display: flex;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.images img{
+    width: 325px;
+    height: auto;
+    position: absolute;
+}
+
+.prev_next_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.heroic_buttons{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.heroic_buttons i{
+    color: #fff;
+}
+
+.box{
+    height: 300px;
+    overflow: hidden ;
+}
+
+.content{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,127 @@
+.visionContainer{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 5%;
+    height: 80vh;
+}
+
+.Vision_content{
+    height: 450px;
+    overflow: hidden;
+
+}
+
+.missionActive{
+    transform: translateY(-450px);
+    transition: 1s ease-in;
+    animation: popup 1s ease-out;
+}
+
+.visionActive{
+    transform: translateY(0px);
+    transition: 1.2s ease-out;
+    animation: popDown 1s ease-in;
+}
+
+@keyframes popup{
+    0%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(-450px);
+    }
+}
+
+@keyframes popDown{
+    0%{
+        transform: translateY(-450px);
+    }
+    60%{
+        transform: translateY(-390px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.Vision{
+    background-image: url('../../assets/images/Vision.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 10%;
+    position: relative;
+    border-radius: 30px;
+}
+
+.Mission{
+    background-image: url('../../assets/images/Vision.png');
+    background-attachment: fixed;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 10%;
+    position: relative;
+    border-radius: 30px;
+}
+
+.Mission{
+    background-image: url('../../assets/images/Mission.png');
+    background-size: cover;
+}
+
+.vision_heading{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    text-align: center;
+}
+
+.vision_para{
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.button_circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_buttons{
+    color: white;
+    font-size: 26px;
+}
+
+.FlexButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

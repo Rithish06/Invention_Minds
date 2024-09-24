@@ -1,10 +1,10 @@
-.navbar_container{
+/* .navbar_container{
     position: -webkit-sticky;
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
-}
+} */
 .navbar{
     background-color: transparent;
     display: flex;
