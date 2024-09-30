@@ -22,7 +22,7 @@ const Vision = () => {
         <div className="Vision_content">
             <div className={`Vision Vission_box ${vision ? "missionActive" : "visionActive"}`}>
                 <div className="vision_heading">Vision</div>
-                <div className="vision_para">Our mission statement serves as a constant reminder that we want to build happy teams who, in turn, build satisfied clients. Our company depends heavily on its clients, therefore keeping them happy is key.</div>
+                <div className="vision_para">Empower brands through cutting-edge digital prowess. We envision a dynamic agency that pioneers creativity, leverages data insights and forges authentic connections. Our mission: catalyze business growth by crafting strategies that redefine digital marketing’s impact.</div>
             </div>
             <div className={`Mission Vission_box ${vision ? "missionActive" : "visionActive"}`}>
                 <div className="vision_heading">Mission</div>

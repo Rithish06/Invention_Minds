@@ -11,8 +11,9 @@ const App = () => {
   return (
     <div>
       {/* <Navbar /> */}
-      <RouterOutlet />
-      <Footer />
+      {/* <RouterOutlet />
+      <Footer /> */}
+      <About />
       {/* <Accordion /> */}
       {/* <About />/ */}
       {/* <HomePageClients /> */}

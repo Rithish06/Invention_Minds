@@ -24,10 +24,19 @@ const Home = () => {
             <button className="container_1_btn container_1_btn_2">Explore More</button>
           </div>
         </div>
-        <div className="home_container_1_box"></div>
+        <div className="home_container_1_box">
+          <div className='home_container_1_box_text'>
+            <span className="changebg">Inv</span>
+            <span className="changebg">ent</span>
+            <span className="changebg">ion</span>
+            <span className="changebg"> Min</span>
+            <span className="changebg">ds</span></div>
+        </div>
       </div>
       {/* container_1_bottom_shadow */}
-      <div className="bottom_shadow_container"></div>
+      <div className="bottom_shadow_container">
+        
+      </div>
     </div>
     <div className="home_container_2">
         <div className="home_container_2_content">
@@ -49,8 +58,20 @@ const Home = () => {
                 <img src={assets.HomeContainerImg3} alt="" className='container_2_images' />
                 <img src={assets.HomeContainerImg4} alt="" className='container_2_images' />
               </div>
+              <div className="container_2_slide_1_images container_2_slide_1_images_copy">
+                <img src={assets.HomeContainerImg1} alt="" className='container_2_images' />
+                <img src={assets.HomeContainerImg2} alt="" className='container_2_images' />
+                <img src={assets.HomeContainerImg3} alt="" className='container_2_images' />
+                <img src={assets.HomeContainerImg4} alt="" className='container_2_images' />
+              </div>
             </div>
-            <div className="container_2_slide_1">
+            <div className="container_2_slide_1 container_2_slide_2">
+            <div className="container_2_slide_2_images">
+                <img src={assets.HomeContainerImg5} alt="" className='container_2_images' />
+                <img src={assets.HomeContainerImg6} alt="" className='container_2_images' />
+                <img src={assets.HomeContainerImg7} alt="" className='container_2_images' />
+                <img src={assets.HomeContainerImg8} alt="" className='container_2_images' />
+            </div>
             <div className="container_2_slide_2_images">
                 <img src={assets.HomeContainerImg5} alt="" className='container_2_images' />
                 <img src={assets.HomeContainerImg6} alt="" className='container_2_images' />
