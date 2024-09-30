@@ -9,7 +9,7 @@ import Heroics from '../../Components/Heroics/Heroics'
 const About = () => {
   return (
     <div className='about_container'>
-        <Navbar />
+        {/* <Navbar /> */}
         {/* container 1 */}
         <div className="about_container_1">
             <div className="About_Banner_content">Your Partner for Digital Success</div>

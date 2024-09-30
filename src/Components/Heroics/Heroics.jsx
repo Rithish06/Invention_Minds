@@ -122,11 +122,11 @@ const Heroics = () => {
           ))}
         </div>
       </div>
+      </div>
       <div className="prev_next_buttons">
-          <div className="heroic_buttons prev_button" onClick={handlePrev}><i class="fa-solid fa-angle-left"></i></div>
-          <div className="heroic_buttons next_button" onClick={handleNext}><i class="fa-solid fa-angle-right"></i></div>
+          <div className="heroic_buttons prev_button" onClick={handlePrev}><i className="fa-solid fa-angle-left"></i></div>
+          <div className="heroic_buttons next_button" onClick={handleNext}><i className="fa-solid fa-angle-right"></i></div>
         </div>
-    </div>
     </div>
 
   )
