@@ -6,11 +6,11 @@
     background-color: transparent;
     padding: 2%;
     overflow-x: hidden;
-    max-width: 100vw;
+    /* max-width: 100vw; */
 }
 
 .Heroic_container{
-    max-width: 100vw;
+    /* max-width: 100vw; */
     overflow-x: hidden;
 }
 
@@ -112,7 +112,7 @@
 
 @media (max-width : 800px){
     .Heroics{
-        display: flex;
+        display: flex; 
         flex-direction: column-reverse;
         overflow-x: hidden;
     }
@@ -120,4 +120,30 @@
 
 @media (max-width : 500px){
 
+    .Meet_Heroics{
+        font-size: 32px;
+    }
+
+    .images{
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .images .image{
+        width: 200px;
+    }
+
+    .heroicNames{
+        font-size: 30px;
+    }
+
+    .heroicDesignation{
+        font-size: 14px;
+    }
+
+    .heroicBriefProfile{
+        font-size: 12px;
+    }
 }
