@@ -16,8 +16,8 @@ const HomePageClients = () => {
         slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 20,
-          stretch: 100,
-          depth: 100,
+          stretch: 0,
+          depth: 60,
           modifier: 2,
           slideShadows: true,
         }}

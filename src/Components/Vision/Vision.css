@@ -9,7 +9,6 @@
 .Vision_content{
     height: 450px;
     overflow: hidden;
-
 }
 
 .missionActive{
@@ -65,9 +64,9 @@
 }
 
 .Mission{
-    background-image: url('../../assets/images/Vision.png');
+    background-image: url('../../assets/images/Mission.png');
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     height: 450px;
     display: flex;
     align-items: center;
@@ -77,11 +76,6 @@
     padding: 0 10%;
     position: relative;
     border-radius: 30px;
-}
-
-.Mission{
-    background-image: url('../../assets/images/Mission.png');
-    background-size: cover;
 }
 
 .vision_heading{
@@ -124,4 +118,76 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media (max-width : 800px){
+
+    .visionContainer{
+        flex-direction: column;
+    }
+
+    .FlexButtons{
+        flex-direction: row;
+    }
+
+    .Vision_content{
+        height: 350px;
+    }
+
+    .Vision{
+        height: 350px;
+    }
+
+    .Mission{
+        height: 350px;
+    }
+
+    .missionActive{
+        transform: translateY(-350px);
+        transition: 1s ease-in;
+        animation: popup 1s ease-out;
+    }
+    
+    .visionActive{
+        transform: translateY(0px);
+        transition: 1.2s ease-out;
+        animation: popDown 1s ease-in;
+    }
+
+    @keyframes popup{
+        0%{
+            transform: translateY(0);
+        }
+        60%{
+            transform: translateY(-60px);
+        }
+        100%{
+            transform: translateY(-350px);
+        }
+    }
+    
+    @keyframes popDown{
+        0%{
+            transform: translateY(-350px);
+        }
+        60%{
+            transform: translateY(-290px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+
+}
+
+@media (max-width: 500px){
+
+    .vision_heading{
+        font-size: 42px;
+    }
+
+    .vision_para{
+        font-size: 14px;
+    }
 }
