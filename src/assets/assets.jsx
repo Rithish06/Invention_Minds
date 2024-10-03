@@ -19,7 +19,7 @@ import Mission from './images/Mission.png'
 import Vission from './images/Vision.png'
 import tire from './images/tire.png'
 import tireSvg from './images/Tire.svg'
-import star from './images/star.png'
+import star from './images/Star.png'
 import webServices from './images/webServices.png'
 
 export const assets = {
