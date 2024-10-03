@@ -20,7 +20,7 @@ import Vission from './images/Vision.png'
 import tire from './images/tire.png'
 import tireSvg from './images/Tire.svg'
 import star from './images/Star.png'
-import webServices from './images/webServices.png'
+import webServices from './images/WebServices.png'
 
 export const assets = {
     logo,
