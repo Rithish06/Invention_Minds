@@ -1,0 +1,168 @@
+.BannerDesignContainer{
+    background: black;
+
+}
+
+.Bannerdesign{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(249, 155, 43, 0.20) 0%, rgba(153, 153, 153, 0.00) 100%), #020D19;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.star{
+    display: flex;
+    justify-content: right;
+}
+
+.star img{
+    width: 100px;
+    margin-right: 20%;
+}
+
+.bannerDesignHeading{
+    color: #FFF;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103px; /* 119.767% */
+    letter-spacing: -2.58px;
+    padding: 0 8%;
+    margin-bottom: 3%;
+}
+
+.bannerDesignDescription{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    width: 522px;
+    margin: 0 auto;
+}
+
+.smallHeadingText{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 160% */
+    letter-spacing: 1.425px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.banner_button_container{
+    display: flex;
+    justify-content: center;
+    margin: 4% 0;
+}
+
+.bannerDesignButton{
+    background-color: #2D63BA;
+    width: 149px;
+    height: 56px;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small_star{
+    width: 20px;
+    height: 20px;
+}
+
+.small_star_1{
+    position: relative;
+    right: 200px;
+}
+
+.small_star_2{
+    position: relative;
+    left: 200px;
+    top: 30px;
+}
+
+.smallHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background-color: #F99B2B;
+}
+
+@media (max-width : 1024px)
+{
+    .bannerDesignHeading{
+        font-size: 56px;
+        line-height: 80px;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media (max-width : 500px){
+
+    .Bannerdesign{
+        height: 100vh;
+    }
+
+    .star img{
+        margin-right: 5%;
+    }
+
+    .bannerDesignHeading{
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        margin-bottom: 30px;
+
+    }
+
+    .bannerDesignDescription{
+        font-size: 12px;
+        width: 311px;
+        margin-bottom: 30px ;
+    }
+
+    .small_star_1{
+        right: 30px;
+        width: 43.154px;
+        height: 43.154px;
+    }
+
+    .small_star_2{
+        left: 40px;
+        width: 43.154px;
+        height: 43.154px;
+        top : 100px
+    }
+
+    .line{
+        width: 80px;
+    }
+
+    .smallHeadingText{
+        font-size: 12px;
+    }
+
+}

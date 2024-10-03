@@ -17,6 +17,10 @@ import AboutContainer1Img from './images/AboutUsContainer1Img.png'
 import Astronaut from './images/Austronaut.png'
 import Mission from './images/Mission.png'
 import Vission from './images/Vision.png'
+import tire from './images/tire.png'
+import tireSvg from './images/Tire.svg'
+import star from './images/star.png'
+import webServices from './images/webServices.png'
 
 export const assets = {
     logo,
@@ -36,5 +40,9 @@ export const assets = {
     AboutContainer1Img,
     Astronaut,
     Mission,
-    Vission
+    Vission,
+    tireSvg,
+    tire,
+    star,
+    webServices
 }

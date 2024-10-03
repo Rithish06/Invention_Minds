@@ -1,0 +1,38 @@
+.services_page{
+    background: #020D19;
+}
+
+.services_container_1{
+    position: relative;
+    top: 140px;
+    z-index: 11;
+    background: #020D19;
+}
+
+.services_heading_banner_heading{
+    color: #fff;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Digital{
+    color: #2D63BA;
+}
+
+.solutions{
+    color: #F99B2B;
+}
+
+.services_container_1_description{
+    color: #C2C2C2;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
