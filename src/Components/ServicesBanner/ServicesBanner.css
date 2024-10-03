@@ -1,0 +1,79 @@
+.services_banner{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #020D19;
+}
+
+.servicesBannerImagesContainer{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.hider_bottom{
+    height: 200px;
+    background: #020D19;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    position: relative;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.hider_top{
+    height: 200px;
+    width: 100%;
+    background: #020D19;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    position: relative;
+    top: 50px;
+    z-index: 10;
+}
+
+.hidercontainer{
+    width: 110%;
+    z-index: 10;
+}
+
+.border_top{
+    height: 190px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+}
+
+.border_bottom{
+    height: 190px;
+    width: 100%;
+    border-top: 2px solid white;
+    border-radius: 50%;
+}
+
+.BannerImages{
+    display: flex;
+    gap: 20px;
+    animation : infiniteScroll 10s linear infinite;
+}
+
+
+@keyframes infiniteScroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.BannerImages img{
+    width: 250px;
+}

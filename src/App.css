@@ -1,0 +1,27 @@
+.gradient_headings{
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #FDBA66 0%, #FD6D71 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width : 800px ){
+    .gradient_headings {
+        font-size: 30px;
+    }
+}
+
+@media (max-width : 500px ){
+    .gradient_headings {
+        font-size: 24px;
+    }
+}
+
+.servicesPage {
+    background: #020D19;
+}

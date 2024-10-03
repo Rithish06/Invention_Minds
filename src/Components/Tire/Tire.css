@@ -1,0 +1,172 @@
+@media (min-width : 300px){
+
+    .tier_container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .tier_img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 130px;
+    }   
+
+    .tier_img img{
+        width: 280px;
+    }
+
+    .image_txt{
+        color: #FFF;
+        width: 120px;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        position: relative;
+        bottom: 137px;
+    }
+
+    .tier_titles{
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .tier_title{
+        font-family: "IBM Plex Sans Condensed";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tire_title1_color{
+        color: #3D5CFE;
+    }
+
+    .tire_title2_color{
+        color: #F99B2B;
+    }
+
+    .tire_title3_color{
+        color: #692B00;
+    }
+
+    .tire_title4_color{
+        color: #471996;
+    }
+
+}
+
+@media (min-width : 400px){
+    
+    .tier_img{
+        bottom: 190px;
+    }
+
+    .tier_img img{
+        width: 380px;
+    }
+
+    .image_txt{
+        width: 140px;
+        font-size: 12px;
+        bottom: 180px;
+    }
+
+}
+
+@media (min-width : 600px){
+    
+    .tier_img{
+        bottom: 250px;
+    }
+
+    .tier_img img{
+        width: 500px;
+    }
+
+    .image_txt{
+        width: 200px;
+        font-size: 12px;
+        bottom: 230px;
+    }
+}
+
+@media (min-width :700px){
+    
+    .tier_img{
+        bottom: 350px;
+    }
+
+    .tier_img img{
+        width: 690px;
+    }
+
+    .image_txt{
+        width: 250px;
+        font-size: 14px;
+        bottom: 300px;
+    }
+}
+
+@media (min-width :900px){
+    
+    .tier_img{
+        bottom: 425px;
+    }
+
+    .tier_img img{
+        width: 850px;
+    }
+
+    .image_txt{
+        width: 370px;
+        font-size: 16px;
+        bottom: 360px;
+    }
+}
+
+@media (min-width :1000px){
+    
+    .tier_img{
+        bottom: 460px;
+    }
+
+    .tier_img img{
+        width: 920px;
+    }
+
+    .image_txt{
+        width: 370px;
+        font-size: 16px;
+        bottom: 400px;
+    }
+}
+
+@media (min-width :1300px){
+    
+    .tier_img{
+        bottom: 600px;
+    }
+
+    .tier_img img{
+        width: 1200px;
+    }
+
+    .image_txt{
+        width: 400px;
+        font-size: 24px;
+        bottom: 550px;
+    }
+}
