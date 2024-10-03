@@ -1,5 +1,5 @@
 import React from 'react'
-import './Services.css'
+import './services.css'
 import ServicesBanner from '../../Components/ServicesBanner/ServicesBanner'
 import Tier from '../../Components/Tire/Tire'
 
