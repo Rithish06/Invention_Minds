@@ -16,12 +16,12 @@ const App = () => {
     <div>
         {/* <Webdevelopment /> */}
         {/* <DigitalMarketing /> */}
-        {/* <SocialMedia /> */}
+        <SocialMedia />
         {/* <CreativeContent /> */}
         {/* <Seo /> */}
         {/* <ResponsiveDesign /> */}
         {/* <Branding /> */}
-        <UserExperiences />
+{/*         <UserExperiences /> */}
 {/*         <Navbar /> */}
     </div>
   )
