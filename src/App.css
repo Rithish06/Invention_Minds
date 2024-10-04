@@ -4,10 +4,33 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: linear-gradient(90deg, #FDBA66 0%, #FD6D71 100%);
+    background: linear-gradient(90deg, #FDBA66 0%, #FD6D71 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.gradient_sub_headings{
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #FDBA66 0%, #FD6D71 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+}
+
+.services_para{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: normal;
 }
 
 @media (max-width : 800px ){
@@ -17,8 +40,19 @@
 }
 
 @media (max-width : 500px ){
+    
     .gradient_headings {
         font-size: 24px;
+    }
+
+    .gradient_sub_headings{
+        font-size: 16px;
+    }
+
+    
+    .services_para{
+        font-size: 12px;
+        text-align: justify;
     }
 }
 

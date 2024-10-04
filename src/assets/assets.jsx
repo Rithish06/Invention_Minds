@@ -1,4 +1,3 @@
-// import logo from './react.svg'
 import logo from './images/logo.png'
 import footerimage from'./images/footer_image.png'
 import HomeContainerImg1 from './images/home_c2_img_1.png'
@@ -21,6 +20,22 @@ import tire from './images/tire.png'
 import tireSvg from './images/Tire.svg'
 import star from './images/Star.png'
 import webServices from './images/WebServices.png'
+import digitalMarketing1 from './images/digitalMarketingImg1.png'
+import digitalMarketing2 from './images/digitalMarketingImg2.png'
+import SmImg_1 from './images/SMimg_1.png'
+import SmImg_2 from './images/SMimg_2.png'
+import SmImg_3 from './images/SMimg_3.png'
+import CreativeContentImg from './images/creative_content_img.png'
+import SeoImage from './images/SeoImg.png'
+import ResponsiveImage1 from './images/responsiveDesignImg_1.png'
+import ResponsiveImage2 from './images/responsiveDesignImg_2.png'
+import BrandingImg1 from './images/BrandingImg1.png'
+import BrandingImg2 from './images/BrandingImg2.png'
+import uxIcon1 from './images/UE_icon_1.png'
+import uxIcon2 from './images/UE_icon_2.png'
+import uxIcon3 from './images/UE_icon_3.png'
+import uxIcon4 from './images/UE_icon_4.png'
+import UserExperienceImg from './images/UserExperienceImg.png'
 
 export const assets = {
     logo,
@@ -44,5 +59,21 @@ export const assets = {
     tireSvg,
     tire,
     star,
-    webServices
+    webServices,
+    digitalMarketing2,
+    digitalMarketing1,
+    SmImg_1,
+    SmImg_2,
+    SmImg_3,
+    CreativeContentImg,
+    SeoImage,
+    ResponsiveImage1,
+    ResponsiveImage2,
+    BrandingImg1,
+    BrandingImg2,
+    uxIcon1,
+    uxIcon2,
+    uxIcon3,
+    uxIcon4,
+    UserExperienceImg
 }

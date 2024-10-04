@@ -1,34 +1,28 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
-import RouterOutlet from './Components/Router/Router'
-import Accordion from './Components/Accordion/Accordion'
-import About from './Pages/About/About'
-import Services from './Pages/Services/Services'
-import Tire from './Components/Tire/Tire'
-import ServicesCarousel from './Components/ServicesCarousel/ServicesCarousel'
-import ServicesBannerDesign from './Components/ServicesBannerDesign/ServicesBannerDesign'
+import DigitalMarketing from './Pages/DigitalMarketing/DigitalMarketing'
+import SocialMedia from './Pages/SocialMedia/SocialMedia'
 import Webdevelopment from './Pages/Webdevelopment/Webdevelopment'
+import CreativeContent from './Pages/CreativeContent/CreativeContent'
+import Seo from './Pages/Seo/Seo'
+import ResponsiveDesign from './Pages/ResponsiveDesign/ResponsiveDesign'
+import Branding from './Pages/Branding/Branding'
+import UserExperiences from './Pages/UserExperiences/UserExperiences'
+import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <RouterOutlet /> */}
-      {/* <Footer /> */}
-      {/* <About /> */}
-      {/* <Accordion /> */}
-      {/* <About />/ */}
-      {/* <HomePageClients /> */}
-      {/* <ServicesBanner /> */}
-      {/* <Services></Services> */}
-      {/* <ServicesCarousel /> */}
-      {/* <Tire /> */}
-      {/* <ServicesBannerDesign /> */}
-      <Webdevelopment />
-
+        {/* <Webdevelopment /> */}
+        {/* <DigitalMarketing /> */}
+        {/* <SocialMedia /> */}
+        {/* <CreativeContent /> */}
+        {/* <Seo /> */}
+        {/* <ResponsiveDesign /> */}
+        {/* <Branding /> */}
+        {/* <UserExperiences /> */}
+        <Navbar />
     </div>
   )
 }

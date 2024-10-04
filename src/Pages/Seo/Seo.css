@@ -1,0 +1,40 @@
+.Seo_Container_2{
+    padding: 8%;
+}
+
+.services_heading{
+    text-align: center;
+}
+
+.SeoContentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.SeoImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SeoImage img{
+    width: 400px;
+    height: auto;
+}
+
+@media (max-width : 900px ){
+
+    .SeoContentContainer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 500px ){
+    .SeoImage img{
+        width: 300px;
+        height: auto;
+    }
+}
