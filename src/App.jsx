@@ -21,8 +21,8 @@ const App = () => {
         {/* <Seo /> */}
         {/* <ResponsiveDesign /> */}
         {/* <Branding /> */}
-        {/* <UserExperiences /> */}
-        <Navbar />
+        <UserExperiences />
+{/*         <Navbar /> */}
     </div>
   )
 }
