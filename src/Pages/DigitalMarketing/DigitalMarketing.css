@@ -1,0 +1,40 @@
+.DMcontainer_2{
+    padding: 8%;
+}
+
+.DMbox_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DMbox_2{
+    flex-direction: row-reverse;
+}
+
+.DMbox1_content{
+    padding: 5%;
+}
+
+.DMbox_1_img img{
+    width: 400px;
+    height: auto;
+}
+
+@media (max-width : 1200px){
+    .DMbox_1_img img{
+        width: 300px;
+    }   
+}
+
+@media (max-width : 800px){
+    .DMbox_1{
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 500px){
+    .DMbox_1_img img{
+        width: 250px;
+    }  
+}

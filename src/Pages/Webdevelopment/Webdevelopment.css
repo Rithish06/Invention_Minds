@@ -5,16 +5,6 @@
     padding: 3% 8%;
 }
 
-.services_para{
-    color: #FFF;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    margin-top: 30px;
-    line-height: normal;
-}
-
 .web_con_2_heading{
     text-align: center;
     margin-bottom: 20px;
@@ -74,11 +64,6 @@
 
 
 @media (max-width : 500px){
-
-    .services_para{
-        font-size: 12px;
-        text-align: justify;
-    }
 
     .dev_list{
         text-align: left;

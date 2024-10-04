@@ -25,7 +25,7 @@ const ServicesBannerDesign = (props) => {
                 <div className="bannerDesignHeading">
                     <span className="stanza_1" style={stanzaColor1}>{props.stanza1}</span>
                     <span className="stanza_2" style={stanzaColor2}>{props.stanza2}</span>
-                    <span className="stanza_3" style={stanzaColor2}>{props.stanza3}</span>
+                    <span className="stanza_3" style={stanzaColor3}>{props.stanza3}</span>
                 </div>
                 <div className="bannerDesignDescription">{props.decription}</div>
                 <div className="banner_button_container">
