@@ -1,0 +1,125 @@
+.MobileApp_Contsiner_2{
+    padding: 2% 8%;
+}
+
+.Mobile_App_Heading{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.MobileApp_content{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.MobileAppImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MobileAppImg .MobileAppImg1{
+    width: 500px;
+}
+
+.MobileAppImg .MobileAppImg2{
+    width: 400px;
+}
+
+.MobileApp_content_1{
+    flex-direction: row-reverse;
+}
+
+.Android_ios{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+
+}
+
+.android_para{
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 8%;
+}
+
+.android_heading{
+    color: #FFF;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 13%;
+    line-height: normal;
+}
+
+.android{
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    background-image: url('../../assets/images/AndroidBgImage.png');
+    background-size: cover;
+}
+
+.ios{
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    background-image: url('../../assets/images/IosBgImage.png');
+    background-size: cover;
+}
+
+@media (max-width : 1100px){
+
+    .MobileAppImg .MobileAppImg1{
+        width: 400px;
+    }
+    
+    .MobileAppImg .MobileAppImg2{
+        width: 350px;
+    }
+}
+
+@media (max-width : 800px){
+
+    .MobileApp_content{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width : 500px){
+
+    .MobileApp_content{
+        gap: 50px;
+    }
+
+    .MobileAppImg .MobileAppImg1{
+        width: 300px;
+    }
+    
+    .MobileAppImg .MobileAppImg2{
+        width: 280px;
+    }
+
+}

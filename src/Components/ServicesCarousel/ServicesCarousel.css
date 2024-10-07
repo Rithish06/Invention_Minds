@@ -1,24 +1,124 @@
-.HomePageClients {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  
+.ServicesCarousel{
+  /* padding: 1.5%; */
+  margin: 0 auto;
+  background: #020D19;
+  padding-bottom: 40px;
+}
 
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.Carousel_heading_1{
+  color: #FFF;
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+.carousel_cards{
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 5%;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.Carousel_title{
+  color: #FFF;
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Carousel_button{
+  display: inline-flex;
+  height: 46px;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  color: #FFF;
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigators{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.nav_button{
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.angles{
+  font-size: 24px;
+}
+
+@media (max-width : 500px){
+
+  .Carousel_heading_1{
+    font-size: 40px;
   }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
+
+  .carousel_cards{
     width: 300px;
+    height: 300px;
   }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
+
+  .Carousel_title{
+    font-size: 24px;
   }
-  
+
+  .swiper-slide{
+    gap: 100px;
+  }
+
+  .swiper{
+    display: flex;
+    gap: 100px;
+  }
+
+  .Carousel_button{
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+
+
+}

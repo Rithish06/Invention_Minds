@@ -1,0 +1,18 @@
+.client_logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clientImage{
+    filter: grayscale(100%);
+    width: 200px;
+    height: auto;
+    transition: 1s;
+}
+
+.clientImage:hover{
+    filter: grayscale(0%);
+    transform: scale(2);
+}

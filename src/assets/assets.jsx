@@ -36,6 +36,8 @@ import uxIcon2 from './images/UE_icon_2.png'
 import uxIcon3 from './images/UE_icon_3.png'
 import uxIcon4 from './images/UE_icon_4.png'
 import UserExperienceImg from './images/UserExperienceImg.png'
+import MobileAppImg1 from './images/MobileAppImg_1.png'
+import MobileAppImg2 from './images/MobileAppImg_2.png'
 
 export const assets = {
     logo,
@@ -75,5 +77,7 @@ export const assets = {
     uxIcon2,
     uxIcon3,
     uxIcon4,
-    UserExperienceImg
+    UserExperienceImg,
+    MobileAppImg1,
+    MobileAppImg2
 }
