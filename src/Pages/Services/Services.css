@@ -36,3 +36,23 @@
     font-weight: 500;
     line-height: normal;
 }
+
+.services_container_2{
+    position: relative;
+    z-index: 10;
+}
+
+.services_container_4{
+    position: absolute;
+    bottom: 0;
+}
+
+.services_description_para{
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

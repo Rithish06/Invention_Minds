@@ -168,4 +168,19 @@
 
 @media (max-width : 900px){
     
+    .footer_content{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer_image{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .contact_info{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
 }

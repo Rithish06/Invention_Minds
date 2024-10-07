@@ -68,6 +68,9 @@ const Tier = () => {
               </div>
             ))}
           </div>
+          <div className="services_description_para">
+            Crafting a unique online presence is crucial, as your website serves as your digital identity. Web development encompasses a range of projects, from simple static web pages to complex internet applications, electronic businesses, or social network services.We partner with the healthcare sector to create innovative and user-friendly websites. Our designs prioritise accessibility, ensuring patients and professionals can navigate seamlessly.
+          </div>
         </div>
       </div>
     </div>
