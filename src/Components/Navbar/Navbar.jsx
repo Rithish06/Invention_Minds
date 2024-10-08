@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import logo from '../../assets/Images/logo.png';
+import logo from '../../assets/images/logo.png';
 import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [locator, setLocator] = useState(0);
+  const [mobileNav, setMobileNav] = useState(false)
   const location = useLocation(); // Hook to get the current route
 
   const MenuList = [
@@ -30,6 +31,10 @@ const Navbar = () => {
     }
   };
 
+  const MobileIconHandler = () => {
+    setMobileNav(!mobileNav)
+  }
+
   // Run on location change to set locator position
   useEffect(() => {
     calculateLocatorPosition();
@@ -41,7 +46,7 @@ const Navbar = () => {
         <div className="logo_container">
           <img src={logo} alt="" />
         </div>
-        <div className="menu">
+        <div className={`menu ${mobileNav ? "shownav" : "hidenav" }`}>
           <ul className="menu_list">
             {MenuList.map((menuItem, index) => (
               <li key={index} className="menu_list_item">
@@ -57,6 +62,9 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="nav_locator" style={locatorStyle}></div>
+        </div>
+        <div className="mobile_icons" onClick={MobileIconHandler}>
+          <i className={mobileNav ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
       </nav>
     </div>
