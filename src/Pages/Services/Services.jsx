@@ -12,7 +12,7 @@ const Services = () => {
             <div className="services_container_1_description">We offer a variety of services designed to help your business thrive online.</div>
         </div>
         <ServicesBanner />
-        <div className="services_container_2">
+          <div className="services_container_2">
         <ServicesCarousel />
       </div>
       <div className="services_container_3">

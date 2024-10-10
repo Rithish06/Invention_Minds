@@ -77,3 +77,48 @@
 .BannerImages img{
     width: 250px;
 }
+
+@media (max-width : 550px){
+    .BannerImages img{
+        width: 150px;
+    }
+
+    .hider_bottom{
+        height: 150px;
+        background: #020D19;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        position: relative;
+        bottom: 50px;
+        z-index: 10;
+    }
+    
+    .hider_top{
+        height: 150px;
+        width: 100%;
+        background: #020D19;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        position: relative;
+        top: 50px;
+        z-index: 10;
+    }
+
+    .border_top{
+        height: 150px;
+        width: 100%;
+        border-bottom: 2px solid white;
+        border-radius: 50%;
+    }
+    
+    .border_bottom{
+        height: 150px;
+        width: 100%;
+        border-top: 2px solid white;
+        border-radius: 50%;
+    }
+}

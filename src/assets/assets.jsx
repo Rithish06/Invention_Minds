@@ -38,6 +38,23 @@ import uxIcon4 from './images/UE_icon_4.png'
 import UserExperienceImg from './images/UserExperienceImg.png'
 import MobileAppImg1 from './images/MobileAppImg_1.png'
 import MobileAppImg2 from './images/MobileAppImg_2.png'
+import HomeFormImage from './images/HomeContactImg.png'
+import sapience from './images/sapience.png'
+import akshaLogo from './images/akshaLogo.png'
+import coral from './images/coral.png'
+import HrproIndia from './images/HrproIndia.png'
+import ssrvm from './images/ssrvm.png'
+import IVFsuccessFertility from './images/IVFsuccessFertility.png'
+import rashtrotthana from './images/rashtrotthana.png'
+import DSpace from './images/DSpace.png'
+import ashwiniAyurveda from './images/ashwiniAyurveda.png'
+import Krishik from './images/Krishik.png'
+import buttonBg from './images/buttonBg.png'
+import contactUs_bg from './images/contactUs_bg.png'
+import contactUs_layer_2 from './images/contactUs_layer_2.png'
+import contactUsImg from './images/contactUsImg.png'
+import ContactUsBgMobile from './images/ContactUsBgMobile.png'
+import contactUsMobileLayer2 from './images/contactUsMobileLayer2.png'
 
 export const assets = {
     logo,
@@ -79,5 +96,22 @@ export const assets = {
     uxIcon4,
     UserExperienceImg,
     MobileAppImg1,
-    MobileAppImg2
+    MobileAppImg2,
+    HomeFormImage,
+    sapience,
+    akshaLogo,
+    coral,
+    HrproIndia,
+    IVFsuccessFertility,
+    ssrvm,
+    rashtrotthana,
+    DSpace,
+    ashwiniAyurveda,    
+    Krishik,
+    buttonBg,
+    contactUs_bg,
+    contactUs_layer_2,
+    contactUsImg,
+    ContactUsBgMobile,
+    contactUsMobileLayer2
 }

@@ -95,6 +95,10 @@ const ServicesCarousel = () => {
     <div className='ServicesCarousel'>
       <div className="Carousel_heading_1">Our Services</div>
         <Swiper 
+         autoplay={{
+          delay: 3000, // Time between slides (in milliseconds)
+          disableOnInteraction: false, // Autoplay won't stop after user interaction
+        }}
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
@@ -107,6 +111,7 @@ const ServicesCarousel = () => {
           modifier: 1,
           slideShadows: false,
         }}
+       
         pagination={false}
         modules={[EffectCoverflow, Pagination]}
          
@@ -123,16 +128,14 @@ const ServicesCarousel = () => {
           }
           
         </Swiper>
-        <div className="navigators">
+        {/* <div className="navigators">
             <div className='nav_button nav_button_prev' ref={prevEl}>
               <i className='fa-solid fa-angle-left angles'></i>
             </div>
             <div className='nav_button nav_button_next' ref={nextEl}>
               <i className='fa-solid fa-angle-right angles'></i>
             </div>
-          </div>
-        
-
+        </div> */}
     </div>
   )
 }

@@ -12,6 +12,7 @@ import CreativeContent from '../../Pages/CreativeContent/CreativeContent';
 import ResponsiveDesign from '../../Pages/ResponsiveDesign/ResponsiveDesign';
 import Branding from '../../Pages/Branding/Branding';
 import MobileApp from '../../Pages/MobileApp/MobileApp';
+import ContactUs from '../../Pages/ContactUs/ContactUs';
 
 const RouterOutlet = () => {
   return (
@@ -20,7 +21,7 @@ const RouterOutlet = () => {
          <Route path='/' element={<Home/>} />
          <Route path='/about' element={<About/>} />
          <Route path='/services' element={<Services/>} />
-         <Route path='/contact-us' element={<About/>} />
+         <Route path='/contact-us' element={<ContactUs/>} />
          <Route path='/career' element={<About/>} />
          <Route path='/services' >
             <Route path='seo' element = {<Seo />}/>
@@ -32,7 +33,6 @@ const RouterOutlet = () => {
             <Route path='responsive-design' element = {<ResponsiveDesign />}/>
             <Route path='branding' element = {<Branding />}/>
             <Route path='mobile-app-development' element = {<MobileApp />}/>
-            {/* <Route path='seo' element = {<Seo />}/> */}
          </Route>
               
       </Routes>
