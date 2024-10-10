@@ -35,6 +35,10 @@ const Navbar = () => {
     setMobileNav(!mobileNav)
   }
 
+  const autoClose = () => {
+    setMobileNav(false)
+  }
+
   // Run on location change to set locator position
   useEffect(() => {
     calculateLocatorPosition();
@@ -49,7 +53,7 @@ const Navbar = () => {
         <div className={`menu ${mobileNav ? "shownav" : "hidenav" }`}>
           <ul className="menu_list">
             {MenuList.map((menuItem, index) => (
-              <li key={index} className="menu_list_item">
+              <li key={index} onClick={autoClose} className="menu_list_item">
                 <NavLink
                   className="linktag"
                   to={`/${menuItem.url}`}

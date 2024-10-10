@@ -56,3 +56,17 @@
     font-weight: 700;
     line-height: normal;
 }
+
+@media (max-width : 500px){
+    
+    .services_heading_banner_heading{
+        font-size: 40px;
+    }
+
+    .services_container_1_description{
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+
+}

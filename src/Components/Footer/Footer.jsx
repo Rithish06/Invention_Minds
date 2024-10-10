@@ -1,8 +1,77 @@
 import React from "react";
 import "./Footer.css";
 import { assets } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+
+
+  const superList_1 = [
+    {
+      linkName: "Home",
+      linkUrl: ""
+    },
+    {
+      linkName: "About Us",
+      linkUrl: "about"
+    },
+    {
+      linkName: "Services",
+      linkUrl: "services"
+    },
+    {
+      linkName: "Career",
+      linkUrl: "career"
+    },
+    {
+      linkName: "Contact Us",
+      linkUrl: "contact-us"
+    },
+  ]
+
+  const superList_2 = [
+    {
+      linkName: "Gallery",
+      linkUrl: ""
+    },
+    {
+      linkName: "Cookies",
+      linkUrl: ""
+    },
+    {
+      linkName: "Privacy",
+      linkUrl: ""
+    },
+    {
+      linkName: "Terms",
+      linkUrl: ""
+    },
+  ]
+
+  const social = [
+    {
+      linkName: "Facebook",
+      linkUrl: ""
+    },
+    {
+      linkName: "Instagram",
+      linkUrl: ""
+    },
+    {
+      linkName: "GitHub",
+      linkUrl: ""
+    },
+    {
+      linkName: "LinkedIn",
+      linkUrl: ""
+    },
+    {
+      linkName: "X",
+      linkUrl: ""
+    },
+  ]
+
+
   return (
     <div className="footer">
       {/* footer background */}
@@ -13,55 +82,56 @@ const Footer = () => {
       {/* footer container */}
       <div className="footer_content_container">
         <div className="footer_content">
-          {/* footer image */}
+          {/* footer Image */}
           <div className="footer_image">
             <img src={assets.footerimage} alt="" />
           </div>
-          {/* superlist */}
-          <div className="super_list footer_columns">
-            <div className="super_list_heading">Superlist</div>
-            <div className="footer_lists_1">
-              <ul className="list_items">
-                <li className="list_item">Home</li>
-                <li className="list_item">About Us</li>
-                <li className="list_item">Services</li>
-                <li className="list_item">Career</li>
-                <li className="list_item">Contact Us</li>
-              </ul>
-              <ul className="list_items">
-                <li className="list_item">Gallery</li>
-                <li className="list_item">Cookies</li>
-                <li className="list_item">Privacy</li>
-                <li className="list_item">Terms</li>
-              </ul>
+          <div className="hyperLinks">
+            <div className="superlists">
+              <div className="superlist_heading">Superlist</div>
+              <div className="superlist">
+                {/* super list item 1 */}
+                <ul className="footer_lists">
+                  {
+                    superList_1.map((list, index) => (
+                      <Link Link to={`/${list.linkUrl}`}><li className="footer_list_item" key={index}>{list.linkName}</li></Link>
+                    ))
+                  }
+                </ul>
+                {/* super list item 2 */}
+                <ul className="footer_lists">
+                  {
+                    superList_2.map((list, index) => (
+                      <Link to={`/${list.linkUrl}`}><li className="footer_list_item" key={index}>{list.linkName}</li></Link>
+                    ))
+                  }
+                </ul>
+              </div>
+            </div>
+            {/* social media links */}
+            <div className="socialMediaLinks">
+              <div className="social_heading">social</div>
+              <div className="social">
+                <ul className="footer_lists">
+                  {
+                    social.map((list, index) => (
+                      <Link to={`/${list.linkUrl}`}><li className="footer_list_item" key={index}>{list.linkName}</li></Link>
+                    ))
+                  }
+                </ul>
+              </div>
             </div>
           </div>
-          {/* social */}
-          <div className="social footer_columns">
-            <div className="social_heading">Social</div>
-            <div className="footer_lists">
-              <ul className="list_items">
-                <li className="list_item">Facebook</li>
-                <li className="list_item">Instagram</li>
-                <li className="list_item">GitHub</li>
-                <li className="list_item">LinkedIn</li>
-                <li className="list_item">X</li>
-              </ul>
-            </div>
-          </div>
-          {/* contact info */}
-          <div className="contact_info footer_columns">
-            <div className="contact_heading">Contact Info</div>
-            <div className="footer_lists">
-            <ul className="list_items">
-              <li className="list_item">
-                No. 12/1, 22nd main road, Muneshwara block, Girinagar Bengaluru,
-                Karnataka- 560085
-              </li>
-              <li className="list_item">inventionmindsblr@gmail.com</li>
-              <li className="list_item">+91 98440 05600</li>
+
+          {/* contact details */}
+
+          <div className="contact_details">
+            <div className="contact_info_heading">Contact Info</div>
+            <ul className="footer_lists">
+                <li className="contact_lists">No. 12/1, 22nd main road, Muneshwara block, Girinagar Bengaluru, Karnataka- 560085</li>
+                <li className="contact_lists">inventionmindsblr@gmail.com​​</li>
+                <li className="contact_lists">+91 98440 05600</li>
             </ul>
-            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,9 @@
   margin: 0 auto;
   background: #020D19;
   padding-bottom: 40px;
+  position: relative;
+  margin-top: -100px;
+  padding-bottom: 100px;
 }
 
 .Carousel_heading_1{

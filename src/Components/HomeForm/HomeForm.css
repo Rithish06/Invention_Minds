@@ -1,0 +1,149 @@
+.HomeForm{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: linear-gradient(218deg, #020D19 40.2%, #0A427F 110.2%); 
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+}
+
+.formImageContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.formFields{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_heading{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form_description{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5%;
+}
+
+.formFields label{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.formFields input{
+    height: 30px;
+    align-self: stretch;
+    border-radius: 3px;
+    border: 0.617px solid #FFF;
+    background: rgba(196, 196, 196, 0.00);
+}
+
+.formFields textarea{
+    width: auto;
+    height: 60px;
+    flex-shrink: 0;
+    background: rgba(196, 196, 196, 0.00);
+    border: 0.617px solid #FFF;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.name_Field {
+    display: flex;
+    gap: 20px;
+}
+
+.name_input_filed {
+    width: 180px;
+}
+
+.submit_button_container{
+    display: flex;
+    justify-content: center;
+}
+
+.submit_button{
+    width: 180px;
+    height: 44px;
+    border-radius: 12px;
+    background: #F99B2B;
+    border: none;
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.error_msg{
+    color: red;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+@media (max-width : 800px){
+
+    .HomeForm{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    .form_heading{
+        font-size: 40px;
+    }
+
+    .form_description{
+        font-size: 12px;
+    }
+
+    form{
+        max-width: 300px;
+    }
+
+    .name_Field {
+        flex-direction: column;
+    }
+
+    .formFields input{
+        width: 300px;
+    }
+
+    .formFields label{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .name_input_filed{
+        width: 150px;
+    }
+
+}
