@@ -36,24 +36,12 @@ const ContactPageBanner = () => {
             {/* container 1 */}
             <div className="contact_us_container_1">
                 <img src={assets.contactUs_bg} alt="" className="contactDesktopBg" />
-                <img
-                    src={assets.ContactUsBgMobile}
-                    alt=""
-                    className="contactMobileBg"
-                />
+                <img src={assets.ContactUsBgMobile} alt="" className="ContactUsBgMobile" />
             </div>
             {/* container 2 */}
             <div className="contact_us_container_2">
-                <img
-                    src={assets.contactUs_layer_2}
-                    alt=""
-                    className="contactDesktopLayer"
-                />
-                <img
-                    src={assets.contactUsMobileLayer2}
-                    alt=""
-                    className="contactMobileLayer"
-                />
+                <img src={assets.contactUs_layer_2} alt="" className="contactDesktopLayer"/>
+                <img src={assets.contactUsMobileLayer2} alt="" className="contactUsMobileLayer" />
             </div>
             {/* container 3 */}
             <div className="contact_us_container_3">

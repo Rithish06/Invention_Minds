@@ -260,6 +260,10 @@
     }
 }
 
+.h_form_container{
+    background-color: #020D19;
+}
+
 @media (max-width : 900px){
 
     /* container 1 */

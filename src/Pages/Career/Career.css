@@ -1,0 +1,133 @@
+.Career_Container{
+    background-color: #020D19;
+}
+
+.career_banner{
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(61, 92, 254, 0.10) 0%, rgba(249, 154, 43, 0.10) 100%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.careerBannerContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+}
+
+.invention{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%; /* 51.2px */
+}
+
+.minds{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%;
+}
+
+.hiring{
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%; /* 19.2px */
+}
+
+.speech-bubble {
+    background-color: white;
+    padding: 15px 20px;
+    width: fit-content;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 80%, 50% 100%, 0% 80%);
+}
+
+.career_questions img{
+    width: 380px;
+}
+
+.career_exploremoreButton{
+    border-radius: 8px;
+    background: #F99B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    color: #F8F8F8;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.career_banner_image img{
+    width: 616px;
+    height: auto;
+}  
+
+@media (max-width : 1250px){
+
+    .career_banner_image img{
+        width: 500px;
+    }
+
+    .career_banner{
+        gap: 100px;
+    }
+
+}
+
+@media (max-width : 800px){
+
+    .career_banner{
+        gap: 100px;
+    }
+
+    .career_banner_image img{
+        width: 300px;
+    }
+
+    .invention{
+        font-size: 44px;
+    }
+    
+    .minds{
+        font-size: 98px;
+    }
+    
+    .hiring{
+        font-size: 18px;
+    }
+    
+    .career_questions img{
+        width: 280px;
+    }
+
+}
+
+@media (max-width : 600px){
+
+    .career_banner{
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+}
