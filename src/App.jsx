@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import RouterOutlet from './Components/Router/Router'
 import { useLocation } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
+import ContactPageBanner from './Components/ContactPageBanner/ContactPageBanner';
 // import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     <div>
         <Navbar />
         <RouterOutlet />
+        {/* <ContactPageBanner /> */}
         <Footer />
     </div>
   )
