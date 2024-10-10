@@ -243,6 +243,10 @@
         margin-top: 50px;
     }
 
+    .container_4_right_content{
+        padding: 0 5%;
+    }
+
 }
 
 @media (max-width : 500px){

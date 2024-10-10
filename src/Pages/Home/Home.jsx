@@ -96,7 +96,10 @@ const Home = () => {
 
     <Clients />
 
-    <ContactPageBanner />
+    <div className="h_form_container">
+      <ContactPageBanner />
+    </div>
+    
     </>
   )
 }

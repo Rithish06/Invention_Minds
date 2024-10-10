@@ -17,7 +17,6 @@ import Astronaut from './images/Austronaut.png'
 import Mission from './images/Mission.png'
 import Vission from './images/Vision.png'
 import tire from './images/tire.png'
-import tireSvg from './images/Tire.svg'
 import star from './images/Star.png'
 import webServices from './images/WebServices.png'
 import digitalMarketing1 from './images/digitalMarketingImg1.png'
@@ -55,6 +54,8 @@ import contactUs_layer_2 from './images/contactUs_layer_2.png'
 import contactUsImg from './images/contactUsImg.png'
 import ContactUsBgMobile from './images/ContactUsBgMobile.png'
 import contactUsMobileLayer2 from './images/contactUsMobileLayer2.png'
+import careerQuestions from './images/career_questions.png'
+import Career_Brain from './images/Career_Brain.png' 
 
 export const assets = {
     logo,
@@ -75,7 +76,6 @@ export const assets = {
     Astronaut,
     Mission,
     Vission,
-    tireSvg,
     tire,
     star,
     webServices,
@@ -113,5 +113,7 @@ export const assets = {
     contactUs_layer_2,
     contactUsImg,
     ContactUsBgMobile,
-    contactUsMobileLayer2
+    contactUsMobileLayer2,
+    careerQuestions,
+    Career_Brain
 }
