@@ -81,6 +81,7 @@ const Footer = () => {
       </div>
       {/* footer container */}
       <div className="footer_content_container">
+        {/* <div className="footer_wrapper"> */}
         <div className="footer_content">
           {/* footer Image */}
           <div className="footer_image">
@@ -94,7 +95,7 @@ const Footer = () => {
                 <ul className="footer_lists">
                   {
                     superList_1.map((list, index) => (
-                      <Link Link to={`/${list.linkUrl}`}><li className="footer_list_item" key={index}>{list.linkName}</li></Link>
+                      <Link key={index} style={{ textDecoration: 'none' }} Link to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
                     ))
                   }
                 </ul>
@@ -102,7 +103,7 @@ const Footer = () => {
                 <ul className="footer_lists">
                   {
                     superList_2.map((list, index) => (
-                      <Link to={`/${list.linkUrl}`}><li className="footer_list_item" key={index}>{list.linkName}</li></Link>
+                      <Link key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
                     ))
                   }
                 </ul>
@@ -115,7 +116,7 @@ const Footer = () => {
                 <ul className="footer_lists">
                   {
                     social.map((list, index) => (
-                      <Link to={`/${list.linkUrl}`}><li className="footer_list_item" key={index}>{list.linkName}</li></Link>
+                      <Link key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
                     ))
                   }
                 </ul>
@@ -133,7 +134,7 @@ const Footer = () => {
                 <li className="contact_lists">+91 98440 05600</li>
             </ul>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
   );

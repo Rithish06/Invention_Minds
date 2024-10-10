@@ -4,6 +4,7 @@ import { assets } from '../../assets/assets'
 import Accordion from '../../Components/Accordion/Accordion'
 import HomeForm from '../../Components/HomeForm/HomeForm'
 import Clients from '../../Components/Clients/Clients'
+import ContactPageBanner from '../../Components/ContactPageBanner/ContactPageBanner'
 ''
 // const container2images = ["HomeContainerImg1","HomeContainerImg2","HomeContainerImg3","HomeContainerImg4","HomeContainerImg5","HomeContainerImg6","HomeContainerImg7","HomeContainerImg8"]
 
@@ -95,7 +96,7 @@ const Home = () => {
 
     <Clients />
 
-    <HomeForm />
+    <ContactPageBanner />
     </>
   )
 }
