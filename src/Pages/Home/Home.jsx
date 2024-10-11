@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import './Home.css'
 import { assets } from '../../assets/assets'
 import Accordion from '../../Components/Accordion/Accordion'
-import HomeForm from '../../Components/HomeForm/HomeForm'
 import Clients from '../../Components/Clients/Clients'
 import ContactPageBanner from '../../Components/ContactPageBanner/ContactPageBanner'
 import { Link } from 'react-router-dom'
@@ -31,8 +30,8 @@ const Home = () => {
           <div className="container_1_heading">We Partner With You</div>
           <div className="container_1_description">we partner with you to transform your vision into<br />  impactful digital strategies that drive success and growth.</div>
           <div className="contaier_1_buttons">
-            <button className="container_1_btn container_1_btn_1">Get Started</button>
-            <Link to = "/contact-us" style={{textDecoration : "none"}}><button className="container_1_btn container_1_btn_2" onClick={scrollToNextContainer}>Explore More</button></Link>
+          <Link to = "/contact-us" style={{textDecoration : "none"}}><button className="container_1_btn container_1_btn_1">Get Started</button></Link>
+          <button className="container_1_btn container_1_btn_2" onClick={scrollToNextContainer}>Explore More</button>
           </div>
         </div>
         <div className="home_container_1_box">
