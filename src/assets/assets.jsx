@@ -56,6 +56,11 @@ import ContactUsBgMobile from './images/ContactUsBgMobile.png'
 import contactUsMobileLayer2 from './images/contactUsMobileLayer2.png'
 import careerQuestions from './images/career_questions.png'
 import Career_Brain from './images/Career_Brain.png' 
+import Carrer_1_img from './images/Carrer_1_img.png' 
+import Carrer_2_img from './images/Carrer_2_img.png' 
+import Carrer_3_img from './images/Carrer_3_img.png' 
+import dummyf from './images/dummyf.png' 
+import dummym from './images/dummym.png' 
 
 export const assets = {
     logo,
@@ -115,5 +120,10 @@ export const assets = {
     ContactUsBgMobile,
     contactUsMobileLayer2,
     careerQuestions,
-    Career_Brain
+    Career_Brain,
+    Carrer_1_img,
+    Carrer_2_img,
+    Carrer_3_img,
+    dummyf,
+    dummym
 }

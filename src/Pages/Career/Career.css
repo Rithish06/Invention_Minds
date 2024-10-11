@@ -82,6 +82,19 @@
     height: auto;
 }  
 
+.career_container_2{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 10%;
+    flex-wrap: wrap;
+}
+
+.career_container_2 img{
+    width: 200px;
+    height: auto;
+}
+
 @media (max-width : 1250px){
 
     .career_banner_image img{

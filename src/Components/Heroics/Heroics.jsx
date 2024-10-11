@@ -5,21 +5,79 @@ import Tejaswini from '../../assets/images/Tejaswini.png'
 import Nithish from '../../assets/images/Nithish.png'
 import Rithish from '../../assets/images/Rithish.png'
 import Keerthu from '../../assets/images/Keerthu.png'
-
+import dummyf from '../../assets/images/dummyf.png' 
+import dummym from '../../assets/images/dummym.png' 
 
 const Heroics = () => {
   const heroics_content = [
+
+    {
+      name : "Chaitra B S",
+      designation : "Managing Partner ",
+      experience : "10",
+      briefProfile : "Chaitra, our Managing Partner, brings a decade of leadership and industry knowledge to the team. Her strategic vision and deep understanding of the field drive our company’s growth. Chaitra’s commitment to excellence and her ability to manage complex challenges make her an essential leader in our organization."
+    },
+
+    {
+      name : "Ramya",
+      designation : "Partner",
+      experience : "10",
+      briefProfile : "Ramya, as a Partner, contributes significantly to the direction and success of our company. With ten years of experience, she blends industry expertise with a focus on innovation. Ramya’s collaborative approach and strong problem-solving abilities have been key in fostering long-term relationships with our clients and partners."
+    },
+
+    {
+      name : "Prakash K",
+      designation : "Director",
+      experience : "36",
+      briefProfile : 'Mr. Prakash is the senior and most highly qualified person with a career spanning 36 years in periodicals, IT, healthcare, educational institutions, automobiles, etc. His competence areas include brand development, project management, content editing, and general operational management. He truly adores developing development plans for both new companies and well-established firms.'
+    },
+
     {
       name : "Sandeep Kumar P",
       designation : "Head of Business & Strategies",
       experience : "17",
       briefProfile : "For 15 years, Mr.Sandeep Kumar P worked in the healthcare, education, and information technology sectors. He is well renowned for his strategic inventiveness in fusing creative strategy with commercial objectives. Today, he effectively oversees brand development and marketing plans for several clients."
     },
+
+    {
+      name : "Rajesh Yadav N",
+      designation : "Business Analyst",
+      experience : "14 ",
+      briefProfile : "Mr. Rajesh Yadav has 14 years of experience working in the IT and Healthcare industries. He is widely renowned for his ability to strategically combine artistic strategy with business goals."
+    },
+
+    {
+      name : "Meghana C",
+      designation : "HR Executive",
+      experience : "6",
+      briefProfile : "Meghana C effectively manages human resources operations to support organizational goals. Her expertise in talent acquisition, employee relations, and performance management ensures a positive and productive work environment. Meghana’s ability to align HR practices with business objectives is essential in cultivating a strong and engaged team."
+    },
+
+    {
+      name : "S V Reddy",
+      designation : "Content Proofreader",
+      experience : "9",
+      briefProfile : "With nine years of experience in content proofreading, S V Reddy ensures that every piece of content meets the highest standards of accuracy and quality. A meticulous approach to detail and a strong command of language are key to maintaining the professional integrity of all communications."
+    },
+
+    {
+      name : "Deepashri",
+      designation : "Co-ordinator",
+      experience : "5",
+      briefProfile : "With five years of experience, Deepashri plays a crucial role in ensuring seamless coordination across all our projects. Her expertise in organizing tasks, managing schedules, and facilitating effective communication is vital to our team's operational efficiency and success."
+    },
+
     {
       name : "Tejaswini M Gowda",
       designation : "Process Analyst ",
       experience : "8",
       briefProfile : "Ms. Tejaswini is well-known for her strategic acumen; she has successfully linked company goals with creative approaches for the past five years across a wide range of industries (Healthcare, Education, and Real estate). She successfully steers her team, which is in charge of brand design and marketing strategies for a wide range of clients."
+    },
+    {
+      name : "Surya",
+      designation : "Graphic Designer",
+      experience : "9",
+      briefProfile : "A seasoned graphic designer with an impressive track record spanning 9+ years. His diverse experience encompasses the Real estate, E-Commerce, Healthcare, and Television industries, where he notably excelled as the best designer for Zee Kannada.His innate talent shines through as he seamlessly translates abstract concepts into captivating visuals. "
     },
     {
       name : "Nithish M. K",
@@ -43,7 +101,7 @@ const Heroics = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentDetails, setCurrentDetails] = useState(0);
-    const images = [SandeepSir,Tejaswini,Nithish,Rithish,Keerthu]
+    const images = [dummyf,dummyf,dummym,SandeepSir,dummym,dummyf,dummyf,dummyf,Tejaswini,dummym,Nithish,Rithish,Keerthu]
     // const pics = images.reverse()
     const updateCarousel = () => {
         const imageElements = document.querySelectorAll(".image");
@@ -64,7 +122,7 @@ const Heroics = () => {
             img.style.transitionDuration = "1s"
           } 
           else {
-            img.style.transform = `rotate(${(index - currentIndex) * -3}deg)`;
+            img.style.transform = `rotate(${(index - currentIndex) * -2}deg)`;
             img.style.zIndex = "1";
             img.style.transitionDuration = "1s"
           }

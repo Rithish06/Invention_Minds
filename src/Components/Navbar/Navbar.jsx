@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/images/logo.png';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [locator, setLocator] = useState(0);
@@ -12,8 +12,8 @@ const Navbar = () => {
     { menu: 'Home', url : ''},
     { menu: 'About', url: 'about' },
     { menu: 'Services', url: 'services' },
-    { menu: 'Contact Us', url: 'contact-us' },
     { menu: 'Career', url: 'career' },
+    { menu: 'Contact Us', url: 'contact-us' },
   ];
 
   const locatorStyle = {
@@ -48,7 +48,7 @@ const Navbar = () => {
     <div className="navbar">
       <nav className="nav">
         <div className="logo_container">
-          <img src={logo} alt="" />
+          <Link style = {{textDecoration : "none"}} to= "/"><img src={logo} alt="" /></Link>
         </div>
         <div className={`menu ${mobileNav ? "shownav" : "hidenav" }`}>
           <ul className="menu_list">
@@ -58,7 +58,7 @@ const Navbar = () => {
                   className="linktag"
                   to={`/${menuItem.url}`}
                   isActive={() => `/${menuItem.url}` === location.pathname}
-                  onClick={() => setLocator(index * 100)} // Adjust as needed
+                  onClick={() => setLocator(index * 100)}
                 >
                   {menuItem.menu}
                 </NavLink>

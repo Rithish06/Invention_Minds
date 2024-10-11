@@ -93,6 +93,7 @@
     }
 
     .menu_list_item{
+        width: 100%;
         justify-content: left;
     }
 

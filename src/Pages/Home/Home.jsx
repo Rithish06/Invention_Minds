@@ -1,14 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Home.css'
 import { assets } from '../../assets/assets'
 import Accordion from '../../Components/Accordion/Accordion'
 import HomeForm from '../../Components/HomeForm/HomeForm'
 import Clients from '../../Components/Clients/Clients'
 import ContactPageBanner from '../../Components/ContactPageBanner/ContactPageBanner'
+import { Link } from 'react-router-dom'
 ''
 // const container2images = ["HomeContainerImg1","HomeContainerImg2","HomeContainerImg3","HomeContainerImg4","HomeContainerImg5","HomeContainerImg6","HomeContainerImg7","HomeContainerImg8"]
 
 const Home = () => {
+
+  const nextContainerRef = useRef(null);
+
+  const scrollToNextContainer = () => {
+    nextContainerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
     <div className='Home_container'>
@@ -21,10 +29,10 @@ const Home = () => {
         <div className="home_content_container">
           <div className="greeting">Welcome to Invention Minds</div>
           <div className="container_1_heading">We Partner With You</div>
-          <div className="container_1_description">Squash latencies, detect bottlenecks and debug errors - 10X faster.<br />Slash APM licensing costs by over 60%</div>
+          <div className="container_1_description">we partner with you to transform your vision into<br />  impactful digital strategies that drive success and growth.</div>
           <div className="contaier_1_buttons">
             <button className="container_1_btn container_1_btn_1">Get Started</button>
-            <button className="container_1_btn container_1_btn_2">Explore More</button>
+            <Link to = "/contact-us" style={{textDecoration : "none"}}><button className="container_1_btn container_1_btn_2" onClick={scrollToNextContainer}>Explore More</button></Link>
           </div>
         </div>
         <div className="home_container_1_box">
@@ -41,7 +49,7 @@ const Home = () => {
         
       </div>
     </div>
-    <div className="home_container_2">
+    <div className="home_container_2" ref={nextContainerRef}>
         <div className="home_container_2_content">
             <div className="home_container_2_heading">Who we are</div>
             <div className="container_2_para">Invention Minds team comes with a unique strategy and our market analyses are accurate and subject-orientated. We are best at providing consistently successful strategies, unique, and forward-thinking digital marketing solutions that consider each client’s individual requirements and unique demands.</div>

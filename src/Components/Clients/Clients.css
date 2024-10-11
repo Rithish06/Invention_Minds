@@ -2,6 +2,7 @@
     background: #020D19;
     height: 100%;
     width: 100%;
+    padding: 1% 0;
 }
 
 .image_container{
@@ -11,7 +12,7 @@
     column-gap: 150px;
     row-gap: 50px;
     align-items: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .client_logos img{
@@ -35,6 +36,7 @@
     line-height: normal;
     text-align: center;
     letter-spacing: 3px;
+    padding-top: 5%;
 }
 
 @media (max-width : 500px){
@@ -48,6 +50,5 @@
         width: 150px;
         height: auto;
     }
-
-    
+      
 }
