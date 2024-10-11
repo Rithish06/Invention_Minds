@@ -132,6 +132,7 @@
     margin-top: 1.5%;
     position: relative;
     z-index: 2;
+    cursor: grabbing;
 }
 
 .changebg:hover{
@@ -334,6 +335,7 @@
     .home_container_1_box{
         visibility: hidden;
         height: 100px;
+        cursor: pointer;
     }
 
     .container_1_btn{

@@ -59,7 +59,7 @@ const ContactPageBanner = () => {
                                 looking to explore our services, discuss a project, or seek
                                 guidance on your digital strategy, our team is here to assist.
                             </div>
-                            <div className="map_link">View on map</div>
+                            <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/p7hSn5tbMcE1xgB57"><div className="map_link">View on map</div></a>
                         </div>
                         <div className="contact_us_form">
                             <form action="" onSubmit={handleSubmit(onSubmit)}>

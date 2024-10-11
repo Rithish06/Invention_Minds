@@ -31,10 +31,6 @@ const Footer = () => {
 
   const superList_2 = [
     {
-      linkName: "Gallery",
-      linkUrl: ""
-    },
-    {
       linkName: "Cookies",
       linkUrl: ""
     },
@@ -55,18 +51,14 @@ const Footer = () => {
     },
     {
       linkName: "Instagram",
-      linkUrl: ""
-    },
-    {
-      linkName: "GitHub",
-      linkUrl: ""
+      linkUrl: "https://www.instagram.com/invention_minds2023/"
     },
     {
       linkName: "LinkedIn",
       linkUrl: ""
     },
     {
-      linkName: "X",
+      linkName: "Twitter",
       linkUrl: ""
     },
   ]
@@ -95,7 +87,7 @@ const Footer = () => {
                 <ul className="footer_lists">
                   {
                     superList_1.map((list, index) => (
-                      <Link key={index} style={{ textDecoration: 'none' }} Link to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
+                      <Link key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
                     ))
                   }
                 </ul>
@@ -111,12 +103,12 @@ const Footer = () => {
             </div>
             {/* social media links */}
             <div className="socialMediaLinks">
-              <div className="social_heading">social</div>
+              <div className="social_heading">Social</div>
               <div className="social">
                 <ul className="footer_lists">
                   {
                     social.map((list, index) => (
-                      <Link key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
+                      <a href={list.linkUrl} target="_blank" rel="noopener noreferrer" key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></a>
                     ))
                   }
                 </ul>

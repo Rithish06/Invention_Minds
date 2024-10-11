@@ -78,7 +78,7 @@ const ServicesCarousel = () => {
     },
     {
       image : MobileAppDevelopment,
-      heading : "Mobile App Develop",
+      heading : "Mobile App Development",
       btnColor : "#516274",
       RouteUrl : "mobile-app-development"
     }

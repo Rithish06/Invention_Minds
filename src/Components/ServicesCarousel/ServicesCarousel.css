@@ -18,6 +18,7 @@
   letter-spacing: 2.48px;
   text-align: center;
   margin-bottom: 20px;
+
 }
 
 .Carousel{
@@ -46,6 +47,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
 
 .Carousel_button{
@@ -105,7 +107,9 @@
   }
 
   .Carousel_title{
-    font-size: 24px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
   }
 
   .swiper-slide{
@@ -118,10 +122,8 @@
   }
 
   .Carousel_button{
-    padding: 8px 10px;
+    padding: 0;
+    width: 100px;
     font-size: 14px;
   }
-
-
-
 }

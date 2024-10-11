@@ -76,6 +76,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 165%;
+    cursor: pointer;
 }
 
 .from_wrapper{
@@ -135,6 +136,7 @@
 
 .ContactFormButton{
     border: none;
+    cursor: pointer;
 }
 
 .ContactFormDiv{

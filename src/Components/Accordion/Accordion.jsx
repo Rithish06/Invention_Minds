@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Accordion.css'
+import { Link } from 'react-router-dom';
 
 const content = {
     digitalMarketing: {
@@ -9,6 +10,7 @@ const content = {
       para_2:
         "With a committed team of experts in SEO, social media marketing, PPC, and a holistic approach to digital marketing, Invention Minds is your trusted partner in reaching your potential customers effectively. We specialize in designing and developing successful digital marketing solutions, offering a comprehensive range of services from content development to digital campaigns and brand advertising. Our goal is to deliver high ROI and establish a strong online presence for businesses across diverse industries.",
       btn_cls: "btns color_1",
+      routeUrl : "digital-marketing"
     },
     websiteDevelopment: {
       title: "Web Designing and Web Development",
@@ -17,6 +19,7 @@ const content = {
       para_2:
         "At Invention Minds, we understand the significance of a business website and offer creative web design services to meet your digital requirements. We cater to businesses of all sizes. Our services blend creative conception, brand sensitivity, technical expertise, and design execution. We priorities engaging, informative, and user-friendly designs to make a positive impression on every visitor. Depending on your needs, we can incorporate graphics, special effects, videos, audio, and more into the website",
       btn_cls: "btns color_2",
+      routeUrl : "web-development"
     },
     seo: {
       title: "SEO For Any Business",
@@ -24,6 +27,7 @@ const content = {
         "We specialize in providing SEO services for businesses of all kinds. Our expert team employs a variety of techniques to enhance your website's popularity with search engines, ensuring a robust online presence. Experience high rankings and a significant boost in traffic with our dedicated SEO solutions.",
       para_2: null,
       btn_cls: "btns color_3",
+      routeUrl : "seo"
     },
     UiUx: {
       title: "UI & UX Design",
@@ -31,6 +35,7 @@ const content = {
         "The success of a website hinges greatly on its User Interface (UI) and User Experience (UX). The UI encompasses the visual elements of a site, from its color schemes to typography, ensuring a cohesive and aesthetically pleasing design that resonates with the brand identity. Equally important is the UX, which focuses on the overall experience of the user. This involves understanding the target audience through research and crafting a journey that is intuitive and seamless. Clear navigation, responsive design across various devices, and accessibility features are paramount for a positive UX. Additionally, incorporating feedback loops and iterative design processes enable continuous improvement. By prioritizing both UI and UX, a website can effectively engage users, foster trust, and drive conversions.",
       para_2: null,
       btn_cls: "btns color_4",
+      routeUrl : "ui-ux-design"
     },
 };
 
@@ -142,7 +147,7 @@ const Accordion = () => {
                     <div className={`services_heading`}>{content[activeContent].title}</div>
                     <div className="para_1">{content[activeContent].para_1}</div>
                     <div className="para_1">{content[activeContent].para_2}</div>
-                    <button className={`services_exploremore`} style={{backgroundColor : buttonColor, transitionDuration : '1s'}}>Explore More</button>
+                    <Link to = {`/services/${content[activeContent].routeUrl}`} style={{textDecoration : "none"}}><button className={`services_exploremore`} style={{backgroundColor : buttonColor, transitionDuration : '1s'}}>Explore More</button></Link>
                 </div>
             </div>
         </div>
