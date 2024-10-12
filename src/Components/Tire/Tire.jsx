@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Tire.css";
 import { assets } from "../../assets/assets";
 
+
 const Tier = () => {
 
   const [activeCon, setActiveCon] = useState(0)
@@ -83,9 +84,10 @@ const Tier = () => {
               </div>
             ))}
           </div>
-          <div className="services_description_para">
-              {tierTitles[activeCon].para}
-          </div>
+
+            <div className="services_description_para">
+                {tierTitles[activeCon].para}
+            </div>
         </div>
       </div>
     </div>

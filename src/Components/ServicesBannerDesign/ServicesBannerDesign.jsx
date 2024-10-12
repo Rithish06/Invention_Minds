@@ -1,6 +1,7 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 import './ServicesBannerDesign.css'
+import { Link } from 'react-router-dom'
 
 const ServicesBannerDesign = (props) => {
 
@@ -30,7 +31,7 @@ const ServicesBannerDesign = (props) => {
                 <div className="bannerDesignDescription">{props.decription}</div>
                 <div className="banner_button_container">
                     <img src={assets.star} alt="" className='small_star small_star_1' />
-                    <div className="bannerDesignButton">Book A Meeting</div>
+                    <Link style = {{textDecoration : "none"}} to = '/contact-us'><div className="bannerDesignButton">Book A Meeting</div></Link>
                     <img src={assets.star} alt="" className='small_star small_star_2' />
                 </div>
                 <div className="smallHeading">

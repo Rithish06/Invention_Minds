@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { assets } from "../../assets/assets";
 import "./HomeForm.css";
 import { useForm } from "react-hook-form";
@@ -9,26 +9,39 @@ const HomeForm = () => {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm();
-  
-  const onSubmit = (data) => {
+    reset,  // Import reset from useForm
+} = useForm();
+
+const [isSubmitting, setIsSubmitting] = useState(false); // Manage button state
+
+const onSubmit = (data) => {
+    // Disable the submit button while submitting
+    setIsSubmitting(true);
+
     // Define your EmailJS service, template, and user IDs
     const serviceID = "home_page_form";
     const templateID = "template_2jxqnyf";
     const userID = "h-ZQGpG0Ul1KZ3lvE";
 
     // Send the email using EmailJS
-    emailjs.send(serviceID, templateID, data, userID)
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        alert('Email sent successfully!');
-        reset(); // Reset form after successful submission
-      })
-      .catch((error) => {
-        console.error("FAILED...", error);
-        alert('Failed to send email. Please try again later.');
-      });
-  };
+    emailjs
+        .send(serviceID, templateID, data, userID)
+        .then((response) => {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("Email sent successfully!");
+
+            // Reset the form after a successful submission
+            reset();
+        })
+        .catch((error) => {
+            console.error("FAILED...", error);
+            alert("Failed to send email. Please try again later.");
+        })
+        .finally(() => {
+            // Re-enable the submit button after submission is complete
+            setIsSubmitting(false);
+        });
+};
 
   return (
     <div className="HomeForm">

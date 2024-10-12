@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./ContactPageBanner.css";
 import { assets } from "../../assets/assets";
 import { useForm } from "react-hook-form";
@@ -9,9 +9,15 @@ const ContactPageBanner = () => {
         register,
         formState: { errors },
         handleSubmit,
+        reset,  // Import reset from useForm
     } = useForm();
 
+    const [isSubmitting, setIsSubmitting] = useState(false); // Manage button state
+
     const onSubmit = (data) => {
+        // Disable the submit button while submitting
+        setIsSubmitting(true);
+
         // Define your EmailJS service, template, and user IDs
         const serviceID = "home_page_form";
         const templateID = "template_2jxqnyf";
@@ -23,11 +29,17 @@ const ContactPageBanner = () => {
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);
                 alert("Email sent successfully!");
-                reset(); // Reset form after successful submission
+
+                // Reset the form after a successful submission
+                reset();
             })
             .catch((error) => {
                 console.error("FAILED...", error);
                 alert("Failed to send email. Please try again later.");
+            })
+            .finally(() => {
+                // Re-enable the submit button after submission is complete
+                setIsSubmitting(false);
             });
     };
 
