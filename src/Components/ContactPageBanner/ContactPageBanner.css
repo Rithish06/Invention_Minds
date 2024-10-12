@@ -139,6 +139,10 @@
     cursor: pointer;
 }
 
+.ContactFormButton:disabled{
+    filter: brightness(0.5);
+}
+
 .ContactFormDiv{
     background-image: url('../../assets/images/buttonBg.png');
     background-size: cover;
