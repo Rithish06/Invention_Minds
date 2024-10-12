@@ -3,6 +3,8 @@ import { assets } from "../../assets/assets";
 import "./HomeForm.css";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com"; // Import EmailJS
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const HomeForm = () => {
   const {
@@ -19,23 +21,22 @@ const onSubmit = (data) => {
     setIsSubmitting(true);
 
     // Define your EmailJS service, template, and user IDs
-    const serviceID = "home_page_form";
-    const templateID = "template_2jxqnyf";
-    const userID = "h-ZQGpG0Ul1KZ3lvE";
+    const serviceID = "service_ft48q3q";
+    const templateID = "im_form_temp";
+    const userID = "5siXgoaMR-a7DGzR9";
 
     // Send the email using EmailJS
     emailjs
         .send(serviceID, templateID, data, userID)
         .then((response) => {
             console.log("SUCCESS!", response.status, response.text);
-            alert("Email sent successfully!");
-
+            toast.success("Email sent successfully!");
             // Reset the form after a successful submission
             reset();
         })
         .catch((error) => {
             console.error("FAILED...", error);
-            alert("Failed to send email. Please try again later.");
+            toast.error("Failed to send email. Please try again later.")
         })
         .finally(() => {
             // Re-enable the submit button after submission is complete
@@ -138,14 +139,15 @@ const onSubmit = (data) => {
 
           {/* Submit Button */}
           <div className="submit_button_container">
-            <button className="submit_button" type="submit">Submit</button>
+            <button className="submit_button" id="submit_button" disabled = {isSubmitting} type="submit">Submit</button>
           </div>
           
         </form>
       </div>
       <div className="formImageContainer">
-        <img src={assets.HomeFormImage} alt="" />
+        <img src={assets.HomeFormImage} alt=""  />
       </div>
+      <ToastContainer />
     </div>
   );
 };

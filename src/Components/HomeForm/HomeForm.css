@@ -110,6 +110,10 @@ form{
     cursor: pointer;
 }
 
+.submit_button:disabled{
+    filter: brightness(0.5);
+}
+
 .error_msg{
     color: red;
     font-family: "IBM Plex Sans Condensed";
