@@ -269,6 +269,10 @@
 
     /* container 1 */
 
+    .container_1_bg{
+        height: 70vh;
+    }
+
     .Home_bg_circle{
         width: 900px;
         height: 900px;
@@ -284,6 +288,10 @@
         line-height: 100px;
     }
 
+    .home_container_1_box{
+        display: none;
+    }
+
     /* container 2 */
 
     .home_container_2{
@@ -291,7 +299,7 @@
     }
 
     .home_container_2_heading{
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .container_2_para{
