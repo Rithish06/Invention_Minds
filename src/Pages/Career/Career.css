@@ -57,7 +57,7 @@
 }
 
 .career_questions img{
-    width: 380px;
+    width: 450px;
 }
 
 .career_exploremoreButton{
@@ -66,12 +66,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 200px;
+    padding: 8px 0;
+    cursor: pointer;
     height: 40px;
     color: #F8F8F8;
     text-align: center;
     font-family: "IBM Plex Sans Condensed";
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

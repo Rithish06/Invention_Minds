@@ -11,7 +11,7 @@ const DigitalMarketing = () => {
             staza2Color = "#F99B2B"
             staza3Color = ""
             stanza1 = "Transforming Visions into Digital"
-            stanza2 = "Success"
+            stanza2 = " Success"
             decription = "Drive business growth with strategic digital marketing solutions that boost online visibility and engagement."
             smallTitle = "Digital Marketing"
         />
