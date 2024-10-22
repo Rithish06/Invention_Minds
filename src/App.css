@@ -33,6 +33,10 @@
     line-height: normal;
 }
 
+a{
+    text-decoration: none;
+}
+
 @media (max-width : 800px ){
     .gradient_headings {
         font-size: 30px;

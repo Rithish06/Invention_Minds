@@ -47,7 +47,7 @@ const Footer = () => {
   const social = [
     {
       linkName: "Facebook",
-      linkUrl: ""
+      linkUrl: "https://www.facebook.com/profile.php?id=100085627813693"
     },
     {
       linkName: "Instagram",

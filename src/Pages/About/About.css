@@ -10,9 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-top: 150px; */
     margin-top: 120px;
+    justify-content: center;
     height: 100vh;
+    padding-bottom: 5%;
 }
 
 .About_Banner_content{
@@ -87,6 +88,13 @@
 .box_image img{
     width: 368px;
     height: auto;
+}
+
+@media (max-width : 1100px){
+    
+    .container_2_box_1{
+        margin-top: 200px;
+    }
 }
 
 @media (max-width : 800px){

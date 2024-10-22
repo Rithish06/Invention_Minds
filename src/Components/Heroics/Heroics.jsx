@@ -7,6 +7,7 @@ import Rithish from '../../assets/images/Rithish.png'
 import Keerthu from '../../assets/images/Keerthu.png'
 import dummyf from '../../assets/images/dummyf.png' 
 import dummym from '../../assets/images/dummym.png' 
+import Aaron from "../../assets/images/Aaron.png";
 
 const Heroics = () => {
   const heroics_content = [
@@ -97,11 +98,17 @@ const Heroics = () => {
       experience : "6",
       briefProfile : "Ms. Keerthana M is a dynamic Full Stack Developer with one year of rich experience in developing scalable and efficient web applications. Specializing in Angular, Node.js, Express.js, and MySQL, Keerthana brings a comprehensive skill set that covers both frontend and backend development. Her proficiency in these technologies enables her to craft robust solutions that align with business needs and deliver superior user "
     },
+    {
+      name : "Aaron Z Philip",
+      designation : "Graphic Designer ",
+      experience : "2",
+      briefProfile : "Mr.Aaron Z Philip is a creative and detail-oriented Graphic Designer with 2 years of experience specialising in digital and print design. Adept at creating visually compelling designs for a variety of media, including branding, logo creations and banner designing.He is proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign), strong understanding of typography, color theory, and layout design, ability to work under tight deadlines and manage multiple projects and have an excellent communication and collaboration skills."
+    }
 ]
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentDetails, setCurrentDetails] = useState(0);
-    const images = [dummyf,dummyf,dummym,SandeepSir,dummym,dummyf,dummyf,dummyf,Tejaswini,dummym,Nithish,Rithish,Keerthu]
+    const images = [dummyf,dummyf,dummym,SandeepSir,dummym,dummyf,dummyf,dummyf,Tejaswini,dummym,Nithish,Rithish,Keerthu,Aaron]
     // const pics = images.reverse()
     const updateCarousel = () => {
         const imageElements = document.querySelectorAll(".image");

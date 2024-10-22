@@ -27,7 +27,7 @@ const Navbar = () => {
       (menuItem) => `/${menuItem.url}` === location.pathname
     );
     if (currentIndex !== -1) {
-      setLocator(currentIndex * 100); // Adjust as per your layout
+      setLocator(currentIndex * 120); // Adjust as per your layout
     }
   };
 

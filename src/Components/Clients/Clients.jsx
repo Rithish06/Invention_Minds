@@ -7,43 +7,53 @@ const Clients = () => {
   const logos = [
     {
       imagePath : assets.rashtrotthana,
-      imageClassName : "rashtrotthana"
+      imageClassName : "rashtrotthana",
+      websiteUrl : "https://www.rashtrotthanahospital.com",
     },
     {
       imagePath : assets.akshaLogo,
-      imageClassName : "akshaLogo"
+      imageClassName : "akshaLogo",
+      websiteUrl : "https://www.akshahospital.in/",
     },
     {
       imagePath : assets.DSpace,
-      imageClassName : "DSpace"
+      imageClassName : "DSpace",
+      websiteUrl : "https://dspaceinterior.in/",
     },
     {
       imagePath : assets.coral,
-      imageClassName : "coral"
-    },
-    {
-      imagePath : assets.ssrvm,
-      imageClassName : "ssrvm"
+      imageClassName : "coral",
+      websiteUrl : "https://coralwomencare.com/",
     },
     {
       imagePath : assets.sapience,
-      imageClassName : "sapience"
+      imageClassName : "sapience",
+      websiteUrl : "https://www.sapiensclinic.com/",
+    },
+    {
+      imagePath : assets.ssrvm,
+      imageClassName : "ssrvm round_img",
+      websiteUrl : "https://vignannagar.ssrvm.org/",
     },
     {
       imagePath : assets.IVFsuccessFertility,
-      imageClassName : "IVFsuccessFertility"
+      imageClassName : "IVFsuccessFertility round_img",
+      websiteUrl : "https://ivfsuccessstories.com/",
     },
     {
       imagePath : assets.HrproIndia,
-      imageClassName : "HrproIndia"
+      imageClassName : "HrproIndia",
+      websiteUrl : "",
     },
     {
       imagePath : assets.Krishik,
-      imageClassName : "Krishik"
+      imageClassName : "Krishik round_img",
+      websiteUrl : "",
     },
     {
       imagePath : assets.ashwiniAyurveda,
-      imageClassName : "ashwiniAyurveda"
+      imageClassName : "ashwiniAyurveda",
+      websiteUrl : "",
     },
 
   ]
@@ -64,7 +74,7 @@ document.querySelectorAll('.image_container img').forEach(img => {
       <div className="image_container">
       {
         logos.map((logo, index) => (
-            <img className={logo.imageClassName} key={index} src={logo.imagePath} alt="" />
+            <a href={logo.websiteUrl} key={index}><img className={logo.imageClassName} src={logo.imagePath} alt="" /></a>
         ))
 
       }

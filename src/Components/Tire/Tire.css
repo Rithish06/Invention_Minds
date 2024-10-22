@@ -34,6 +34,7 @@
     .tier_titles{
         height: 100px;
         overflow: hidden;
+        margin: 0;
     }
 
     .tier_title{
@@ -74,7 +75,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding: 5% 8%;
+        padding: 1% 8%;
     }
 
 }

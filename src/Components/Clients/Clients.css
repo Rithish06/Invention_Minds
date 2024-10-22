@@ -12,14 +12,18 @@
     column-gap: 150px;
     row-gap: 50px;
     align-items: center;
-    padding-bottom: 5%;
+    padding : 2% 0 6% 0
 }
 
 .client_logos img{
-    width: 200px;
+    width: 150px;
     height: auto;
     filter: grayscale(100%);
     transition: 1s;
+}
+
+.round_img{
+    width: 100px;
 }
 
 .client_logos img:hover {
