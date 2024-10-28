@@ -49,7 +49,7 @@ const onSubmit = (data) => {
       <div className="formContainer">
         <div className="form_heading">GET IN TOUCH</div>
         <div className="form_description">Contact us if you need supports for next event</div>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="con_form">
           {/* First Name */}
           <div className="name_Field">
             <div className="formFields">
