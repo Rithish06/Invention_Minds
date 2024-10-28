@@ -56,10 +56,12 @@ const Navbar = () => {
           <ul className="menu_list" onClick={autoClose}> 
             {MenuList.map((menuItem, index) => (
               <NavLink
-              className="linktag" to={`/${menuItem.url}`}
+                  exact
+                  className="linktag" to={`/${menuItem.url}`}
                   isActive={() => `/${menuItem.url}` === location.pathname}
                   onClick={() => setLocator(index * 100)}
-                  key={index} 
+                  key={index}
+                  activeClassName="active"
               >
                 <li className="menu_list_item">
                   {menuItem.menu}

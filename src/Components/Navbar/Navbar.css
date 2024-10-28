@@ -19,8 +19,8 @@
 .menu_list{
     display: flex;
     list-style-type: none;
-    background-color: #ffffffb9;
-    border-radius: 30px;
+    border-radius: 73px;
+    background: #ffffff13;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -35,7 +35,7 @@
     height: 40px;
     font-family: "DM Sans";
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,12 @@
 
 .linktag{
     text-decoration: none;
-    color: black;
+    color: #fff;
+}
+
+.linktag.active{
+    color: #2D63BA;
+    transition: 1s;
 }
 
 .nav_locator{
