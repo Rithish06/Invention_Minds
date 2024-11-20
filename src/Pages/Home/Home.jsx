@@ -5,7 +5,7 @@ import Accordion from '../../Components/Accordion/Accordion'
 import Clients from '../../Components/Clients/Clients'
 import ContactPageBanner from '../../Components/ContactPageBanner/ContactPageBanner'
 import { Link } from 'react-router-dom'
-''
+import { Helmet } from 'react-helmet'
 // const container2images = ["HomeContainerImg1","HomeContainerImg2","HomeContainerImg3","HomeContainerImg4","HomeContainerImg5","HomeContainerImg6","HomeContainerImg7","HomeContainerImg8"]
 
 const Home = () => {
@@ -18,6 +18,10 @@ const Home = () => {
 
   return (
     <>
+
+    {/* <Helmet>
+      <title>Home page of Invention Minds</title>
+    </Helmet> */}
     <div className='Home_container'>
       {/* container_1 bg */}
       <div className="container_1_bg">

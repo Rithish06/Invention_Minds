@@ -13,9 +13,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
 
-
-
-
 const ContactPageBanner = () => {
 
     const {

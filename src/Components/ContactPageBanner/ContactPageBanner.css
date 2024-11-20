@@ -209,3 +209,18 @@ iframe{
     }
 
 }
+
+@media (max-width : 365px){
+    .contact_us_heading{
+        text-align: center;
+    }
+
+    .ContactFormButton{
+        margin: 0 auto;
+    }
+
+    .contact_para, .contact_address{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
