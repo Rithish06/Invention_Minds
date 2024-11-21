@@ -5,11 +5,19 @@ import { assets } from '../../assets/assets'
 import Navbar from '../../Components/Navbar/Navbar'
 import Vision from '../../Components/Vision/Vision'
 import Heroics from '../../Components/Heroics/Heroics'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   return (
     <div className='about_container'>
-        {/* <Navbar /> */}
+
+        {/* meta title and description */}
+        <Helmet>
+            <title>About Invention Minds | Leading Digital Solutions Provider</title>
+            <meta name = "description" content = "Learn about Invention Minds, a Bengaluru-based leader in digital solutions, web development, mobile apps, and digital marketing innovation."/>
+            <meta name = "keywords" content = "About Invention Minds, Top digital solutions provider, Innovative technology solutions, Web development experts, Mobile app development services, Digital marketing solutions, Technology-driven business growth, Leading digital agency in Bengaluru"/>
+        </Helmet>
+
         {/* container 1 */}
         <div className="about_container_1">
             <div className="About_Banner_content">Your Partner for Digital Success</div>

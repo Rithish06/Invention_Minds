@@ -1,6 +1,8 @@
 import React, {useRef} from 'react'
 import './Career.css'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
+// import { Helmet } from 'react-helmet'
 
 const Career = () => {
 
@@ -14,6 +16,12 @@ const Career = () => {
 
   return (
     <div className='Career_Container'> 
+    {/* meta title and description */}
+        <Helmet>
+            <title>Exciting Career Opportunities | Join Invention Minds Today</title>
+            <meta name="description" content="Explore rewarding career opportunities at Invention Minds. Join our team of innovators and grow your career in technology and digital solutions." />
+            <meta name="keywords" content="Career opportunities in technology, Jobs at Invention Minds, Technology careers in Bengaluru, Join tech innovators, IT job openings, Digital solutions careers, Web development careers, Mobile app development jobs, Best IT jobs in Bengaluru, Career growth in tech" />
+        </Helmet>
         <div className="career_banner">
             <div className="careerBannerContent">
                 {/* career heading */}

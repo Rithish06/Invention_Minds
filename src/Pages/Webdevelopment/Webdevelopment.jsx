@@ -2,10 +2,17 @@ import React from 'react'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
 import './Webdevelopment.css'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
 
 const Webdevelopment = () => {
   return (
     <div className='servicesPage'>
+      <Helmet>
+        <title>Top Web Development Services | Custom Websites for Business Growth</title>
+        <meta name='description' content="Boost your online presence with Invention Minds' expert web development services. We build responsive, SEO-friendly, and custom websites tailored to your business." />
+        <meta name='keywords' content="Web Development Services, Custom Website Design, Responsive Web Design, SEO-Friendly Websites,  Business Website Development, Professional Web Development, Best Web Development Company, E-Commerce Website Development, Mobile-Friendly Web Solutions, Website Development for Business Growth"/>
+      </Helmet>
+
       <ServicesBannerDesign 
         staza1Color = "#fff"
         staza2Color = "#F99B2B"

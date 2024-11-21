@@ -2,10 +2,16 @@ import React from 'react'
 import './MobileApp.css'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
 
 const MobileApp = () => {
   return (
     <div className='servicesPage'>
+          <Helmet>
+            <title>Mobile App Development Services in Bengaluru | Invention Minds</title>
+            <meta name="description" content='Expert mobile app development in Bengaluru. Invention Minds specializes in custom iOS and Android applications tailored to your business needs.' />
+            <meta name="keywords" content="Mobile app development Bengaluru, Custom mobile applications, iOS app development, Android app development, Mobile app development services" />
+          </Helmet>
         <ServicesBannerDesign 
         staza1Color = "#fff"
         staza2Color = "#F99B2B"
