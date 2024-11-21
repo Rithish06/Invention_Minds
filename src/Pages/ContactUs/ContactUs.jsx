@@ -3,11 +3,18 @@ import "./ContactUs.css";
 import { assets } from "../../assets/assets";
 import { useForm } from "react-hook-form";
 import HomeForm from "../../Components/HomeForm/HomeForm";
+import { Helmet } from 'react-helmet'
 
 const ContactUs = () => {
 
   return (
     <div className="ContactUs">
+      {/* meta title and description */}
+      <Helmet>
+        <title>Contact Invention Minds | Leading Digital Solutions in Bengaluru</title>
+        <meta name="description" content="Reach out to Invention Minds, Bengaluru's premier digital solutions provider, for expert web development, mobile app creation, and digital marketing services. Let's innovate together."/>
+        <meta name="keywords" content="Contact Invention Minds, Digital solutions Bengaluru, Web development services, Mobile app development, Digital marketing agency"/>
+      </Helmet>
       <HomeForm />
       {/* map */}
       <div className="contactMap">

@@ -2,10 +2,18 @@ import React from 'react'
 import './DigitalMarketing.css'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
 
 const DigitalMarketing = () => {
   return (
     <div className='servicesPage'>
+        {/* meta title and description */}
+        <Helmet>
+            <title>Digital Marketing Services | Boost Your Online Presence with Invention Minds</title>
+            <meta name='description' content="Achieve online success with Invention Minds' digital marketing services. Specializing in SEO, PPC, social media, and content marketing strategies." />
+            <meta name='keywords' content="Digital marketing services, Online marketing strategies, SEO services, PPC advertising, Social media marketing, Content marketing solutions, Boost online presence, Digital marketing company, Marketing agency, Digital growth experts" />
+        </Helmet>
+
         <ServicesBannerDesign 
             staza1Color = "#fff"
             staza2Color = "#F99B2B"

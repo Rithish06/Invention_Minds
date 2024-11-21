@@ -2,10 +2,18 @@ import React from 'react'
 import './Branding.css'
 import { assets } from '../../assets/assets'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
+import { Helmet } from 'react-helmet'
 
 const Branding = () => {
   return (
     <div className='servicesPage'>
+
+      <Helmet>
+        <title>Expert Branding Services | Build Your Brand Identity</title>
+        <meta name = "description" content="Elevate your business with expert branding services. From logo design to strategy, we create impactful brand identities for lasting impressions." />
+        <meta name = "keywords" content="Branding services, Brand identity design, Professional logo design, Creative branding solutions, Build your brand, Business branding experts, Custom brand strategies, Best branding company, Brand development, Digital branding services"/>
+      </Helmet>
+
       <ServicesBannerDesign 
         staza1Color = "#fff"
         staza2Color = "#F99B2B"

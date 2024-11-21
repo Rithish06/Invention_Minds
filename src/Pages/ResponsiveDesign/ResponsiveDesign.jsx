@@ -2,10 +2,16 @@ import React from 'react'
 import './ResponsiveDesign.css'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
 
 const ResponsiveDesign = () => {
   return (
     <div className='servicesPage'>
+        <Helmet>
+            <title>Responsive Web Design Services in Bengaluru | Invention Minds</title>
+            <meta name='description' content="Enhance user experience with Invention Minds' responsive web design services in Bengaluru. Our expert team ensures your website is mobile-friendly and SEO-optimized." />
+            <meta name='keywords' content="Responsive web design, Mobile-friendly website design, SEO-optimized web design, Web design services Bengaluru, User experience design, Adaptive web design, Fluid grid layouts, Cross-device compatibility, Flexible images and media, Website redesign services"/>
+        </Helmet>
         <ServicesBannerDesign 
         staza1Color = "#F99B2B"
         staza2Color = "#fff"

@@ -2,10 +2,17 @@ import React from 'react'
 import './Seo.css'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
 
 const Seo = () => {
   return (
     <div className='servicesPage'>
+        {/* meta title and description */}
+        <Helmet>
+            <title>Professional SEO Services | Boost Your Website Rankings with Invention Minds</title>
+            <meta name='description' content="Get top-notch SEO services from Invention Minds. Improve your website's visibility, drive traffic, and grow your business with expert SEO strategies." />
+            <meta name='keywords' content="Professional SEO services, Search engine optimization, Website ranking improvement, Increase organic traffic, SEO experts near me, On-page and off-page SEO, Local SEO services, Best SEO agency, Affordable SEO packages, Digital marketing and SEO, SEO strategies for business growth, Keyword research and optimization, Google ranking services, E-commerce SEO services, Improve website visibility" />
+        </Helmet>
         <ServicesBannerDesign 
             staza1Color = "#fff"
             staza2Color = "#F99B2B"

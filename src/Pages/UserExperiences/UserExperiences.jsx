@@ -2,11 +2,17 @@ import React from 'react'
 import './UserExperiences.css'
 import { assets } from '../../assets/assets'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
+import { Helmet } from 'react-helmet'
 
 
 const UserExperiences = () => {
   return (
     <div className='servicesPage'>
+        <Helmet>
+          <title>UI/UX Design Services | Enhance User Experience with Invention Minds</title>
+          <meta name='description' content="Boost your business with Invention Minds' expert UI/UX design services. Create intuitive, engaging, and user-friendly designs for websites and apps." />
+          <meta name='keywords' content="UI/UX design services, User experience design company, User interface design agency, UI/UX experts for websites, Best UI/UX design services, Enhance user experience design, Creative UI/UX designers, Intuitive website designs, App user experience design, UX/UI services for business growth"/>
+        </Helmet>
         <ServicesBannerDesign 
         staza1Color = "#fff"
         staza2Color = "#F99B2B"

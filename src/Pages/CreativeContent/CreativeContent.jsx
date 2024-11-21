@@ -2,10 +2,17 @@ import React from 'react'
 import './CreativeContent.css'
 import ServicesBannerDesign from '../../Components/ServicesBannerDesign/ServicesBannerDesign'
 import { assets } from '../../assets/assets'
+import { Helmet } from 'react-helmet'
 
 const CreativeContent = () => {
   return (
     <div className='servicesPage'>
+      <Helmet>
+        <title>Creative Content Services | Invention Minds - Expert Content Creation</title>
+        <meta name='description' content="Elevate your brand with Invention Minds' creative content services. Our expert team delivers compelling content tailored to your audience, boosting engagement and driving results."/>
+        <meta name='keywords' content="Creative content services, Content creation agency, Professional content writing, Brand storytelling, Digital content strategy, Engaging content solutions, Content marketing services, SEO content writing, Custom content development, Content strategy consulting"/>
+      </Helmet>
+
       <ServicesBannerDesign 
         staza1Color = "#fff"
         staza2Color = "#F99B2B"
