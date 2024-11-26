@@ -99,4 +99,9 @@
         width: 40px;
     }
 
+    .UE_img img{
+        width: 280px;
+        height: auto
+    }
+
 }

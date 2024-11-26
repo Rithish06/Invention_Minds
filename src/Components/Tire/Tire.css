@@ -31,6 +31,11 @@
         bottom: 137px;
     }
 
+    .tier_contents{
+        position: relative;
+        bottom: 50px;
+    }
+
     .tier_titles{
         height: 100px;
         overflow: hidden;
@@ -138,6 +143,11 @@
     .services_description_para{
         font-size: 16px;
     }
+
+    .tier_contents{
+        position: relative;
+        bottom: 60px;
+    }
 }
 
 @media (min-width :900px){
@@ -192,6 +202,11 @@
 
     .services_description_para{
         font-size: 20px;
+    }
+
+    .tier_contents{
+        position: relative;
+        bottom: 100px;
     }
 
 }
