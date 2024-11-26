@@ -46,13 +46,12 @@ const Home = () => {
               <span className="changebg">ent</span>
               <span className="changebg">ion</span>
               <span className="changebg"> Min</span>
-              <span className="changebg">ds</span></div>
+              <span className="changebg">ds</span>
+            </div>
           </div>
         </div>
         {/* container_1_bottom_shadow */}
-        <div className="bottom_shadow_container">
-
-        </div>
+        <div className="bottom_shadow_container"></div>
       </div>
       <div className="home_container_2" ref={nextContainerRef}>
         <div className="home_container_2_content">

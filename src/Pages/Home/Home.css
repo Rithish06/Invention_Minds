@@ -136,12 +136,11 @@
 }
 
 .changebg:hover {
+    transition: 1s;
     background: linear-gradient(to right, #2D63BA, #F99B2B, rgba(0, 0, 0, 0.396));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 
 .bottom_shadow_container {
     height: 10rem;

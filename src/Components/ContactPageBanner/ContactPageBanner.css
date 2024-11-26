@@ -71,6 +71,18 @@
     color : #fff
 }
 
+.inputfields input::placeholder{
+    font-size: 16px;
+    font-family: "IBM Plex Sans Condensed";
+    font-weight: 700;
+}
+
+.inputfields textarea::placeholder{
+    font-size: 16px;
+    font-family: "IBM Plex Sans Condensed";
+    font-weight: 700;
+}
+
 .inputfields textarea{
     display: flex;
     width: 370px;
