@@ -6,7 +6,21 @@ import { Helmet } from 'react-helmet'
 
 const Career = () => {
 
-    const careerImg = [assets.Carrer_1_img,assets.Carrer_2_img,assets.Carrer_3_img]
+    // const careerImg = [assets.Carrer_1_img,assets.Carrer_2_img,assets.Carrer_3_img]
+    const careerImg = [
+        {
+            image : assets.Carrer_1_img,
+            alt : "Join Invention Minds team in Bangalore"
+        },
+        {
+            image : assets.Carrer_2_img,
+            alt : "Invention Minds hiring in Bangalore"
+        },
+        {
+            image : assets.Carrer_3_img,
+            alt : "Work with Invention Minds Bangalore"
+        }
+    ]
 
     const nextContainerRef = useRef(null);
 
@@ -32,19 +46,19 @@ const Career = () => {
                 </div>
                 {/* career questions */}
                 <div className="career_questions">
-                    <img src= {assets.careerQuestions} alt="" />
+                    <img src= {assets.careerQuestions} alt="Career opportunities at Invention Minds Bangalore" />
                 </div>
                 {/* career button */}
                 <div className="career_exploremoreButton" onClick={scrollToNextContainer}>Explore</div>
             </div>
             <div className="career_banner_image">
-                <img src={assets.Career_Brain} alt="" />
+                <img src={assets.Career_Brain} alt="Invention Minds job openings in Bangalore" />
             </div>
         </div>
         <div className="career_container_2" ref={nextContainerRef}>
              {
                 careerImg.map((img, index) => (
-                    <img src= {img} key={index} />
+                    <img src= {img.image} key={index} alt = {img.alt} />
                 ))
              }
         </div>

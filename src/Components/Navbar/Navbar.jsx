@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/best-digital-marketing-company-in-banglore.png";
 import { NavLink, Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -42,14 +42,14 @@ const Navbar = () => {
   // Run on location change to set locator position
   useEffect(() => {
     calculateLocatorPosition();
-  }, [location]);
+  }, [location, locator]);
 
   return (
     <div className="navbar">
       <nav className="nav">
         <div className="logo_container">
           <Link style={{ textDecoration: "none" }} to="/">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Best Digital Marketing Company In Bangalore" />
           </Link>
         </div>
         <div className={`menu ${mobileNav ? "shownav" : "hidenav"}`}>

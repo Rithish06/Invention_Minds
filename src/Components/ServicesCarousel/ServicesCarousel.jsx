@@ -6,15 +6,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './ServicesCarousel.css';
 import { Link } from 'react-router-dom';
-import Brand from '../../assets/images/Branding.png';
-import CreativeContent from '../../assets/images/CreativeContent.png';
-import DigitalMarketing from '../../assets/images/DigitalMarketing.png';
-import MobileAppDevelopment from '../../assets/images/MobileAppDevelopment.png';
-import ResponsiveDesign from '../../assets/images/ResponsiveDesign.png';
-import SeoForBusiness from '../../assets/images/SEO.png';
-import SocialMedia from '../../assets/images/SocialMedia.png';
-import WebDevelopment from '../../assets/images/WebDevelopment.png';
-import UiUx from '../../assets/images/UiUx.png';
+import Brand from '../../assets/images/invention-minds-branding-services-bangalore.png';
+import CreativeContent from '../../assets/images/invention-minds-creative-content-services-bangalore.png';
+import DigitalMarketing from '../../assets/images/invention-minds-digital-marketing-services-bangalore.png';
+import MobileAppDevelopment from '../../assets/images/invention-minds-mobile-app-development-bangalore.png';
+import ResponsiveDesign from '../../assets/images/invention-minds-responsive-web-design-bangalore.png';
+import SeoForBusiness from '../../assets/images/invention-minds-seo-services-bangalore.png';
+import SocialMedia from '../../assets/images/invention-minds-social-media-management-bangalore.png';
+import WebDevelopment from '../../assets/images/invention-minds-web-development-services-bangalore.png';
+import UiUx from '../../assets/images/invention-minds-ui-ux-design-services-bangalore.png';
 
 const ServicesCarousel = () => {
 

@@ -9,51 +9,61 @@ const Clients = () => {
       imagePath : assets.rashtrotthana,
       imageClassName : "rashtrotthana",
       websiteUrl : "https://www.rashtrotthanahospital.com",
+      alt : "Rashtrotthana Hospital"
     },
     {
       imagePath : assets.akshaLogo,
       imageClassName : "akshaLogo",
       websiteUrl : "https://www.akshahospital.in/",
+      alt : "Aksha Hospital"
     },
     {
       imagePath : assets.DSpace,
       imageClassName : "DSpace",
       websiteUrl : "https://dspaceinterior.in/",
+      alt : "Dsapce Interior"
     },
     {
       imagePath : assets.coral,
       imageClassName : "coral",
       websiteUrl : "https://coralwomencare.com/",
+      alt : "Coral Advanced Fertility and Women's Care"
     },
     {
       imagePath : assets.sapience,
       imageClassName : "sapience",
       websiteUrl : "https://www.sapiensclinic.com/",
+      alt : "Sapience Clinic"
     },
     {
       imagePath : assets.ssrvm,
       imageClassName : "ssrvm round_img",
       websiteUrl : "https://vignannagar.ssrvm.org/",
+      alt : "SSRVM Vignan Nagar"
     },
     {
       imagePath : assets.IVFsuccessFertility,
       imageClassName : "IVFsuccessFertility round_img",
       websiteUrl : "https://ivfsuccessstories.com/",
+      alt : "IVF Success Stories"
     },
     {
       imagePath : assets.HrproIndia,
       imageClassName : "HrproIndia",
       websiteUrl : "",
+      alt : "HR Pro India"
     },
     {
       imagePath : assets.Krishik,
       imageClassName : "Krishik round_img",
       websiteUrl : "",
+      alt : "Krishik UAS Darwad"
     },
     {
       imagePath : assets.ashwiniAyurveda,
       imageClassName : "ashwiniAyurveda",
       websiteUrl : "",
+      alt : "Ashwini Ayurveda"
     },
 
   ]
@@ -74,7 +84,7 @@ document.querySelectorAll('.image_container img').forEach(img => {
       <div className="image_container">
       {
         logos.map((logo, index) => (
-            <a href={logo.websiteUrl} key={index}><img className={logo.imageClassName} src={logo.imagePath} alt="" /></a>
+            <a href={logo.websiteUrl} key={index}><img className={logo.imageClassName} src={logo.imagePath} alt={logo.alt} /></a>
         ))
 
       }

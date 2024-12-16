@@ -18,7 +18,7 @@ const ResponsiveDesign = () => {
         staza3Color = ""
         stanza1 = "Responsive Website Design "
         stanza2 = "for Flawless Multi-Device Experiences"
-        decription = "Optimize your online presence with proven SEO techniques that increase rankings and grow engagement."
+        decription = "Responsive Web Design Services in Bengaluru – Invention Minds"
         smallTitle = "Responsive Website Design"
       />
 
@@ -38,7 +38,7 @@ const ResponsiveDesign = () => {
                     <div className="services_para">Responsive websites tend to perform better in search engine rankings compared to non-responsive sites. Search engines like Google prioritise mobile-friendly websites in their search results, which can lead to higher visibility and increased organic traffic.</div>
                 </div>
                 <div className="RD_box_1_img">
-                    <img src={assets.ResponsiveImage1} alt="" />
+                    <img src={assets.ResponsiveImage1} alt="Best responsive web design services in Bangalore | Invention Minds" />
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ const ResponsiveDesign = () => {
                     <div className="services_para">Whether you're launching a new website or looking to upgrade your existing site, trust Invention Minds to create a responsive website that sets you apart from the competition and drives results for your business.</div>
                 </div>
                 <div className="RD_box_1_img">
-                    <img src={assets.ResponsiveImage2} alt="" />
+                    <img src={assets.ResponsiveImage2} alt="Top responsive website design company Bangalore | Invention Minds" />
                 </div>
             </div>
 

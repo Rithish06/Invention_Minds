@@ -19,7 +19,7 @@ const UserExperiences = () => {
         staza3Color = ""
         stanza1 = "Transforming Ideas into Exceptional "
         stanza2 = "User Experiences"
-        decription = "Create intuitive UI/UX designs that enhance user engagement and improve overall satisfaction."
+        decription = "Professional UI/UX Design Services in Bengaluru – Invention Minds"
         smallTitle = "UI/UX Design"
       />
 
@@ -33,31 +33,31 @@ const UserExperiences = () => {
         <div className="UE_contentts">
             <div className="UE_con_row UE_con_row_1">
                 <div className="UE_con_row_box">
-                    <img src={assets.uxIcon1} alt="" />
+                    <img src={assets.uxIcon1} alt="Best UI/UX design services in Bangalore | Invention Minds" />
                     <div className="box_heading">Empathizing with user needs</div>
                     <div className="box_description">Understanding your unique challenges, we tailor solutions that align with your vision and goals. Your success drives every decision we make.</div>
                 </div>
                 <div className="UE_con_row_box">
-                    <img src={assets.uxIcon2} alt="" />
+                    <img src={assets.uxIcon2} alt="Professional UX design agency in Bangalore | Invention Minds" />
                     <div className="box_heading">Defining problems clearly</div>
                     <div className="box_description">By identifying the core issues, we provide clarity and focus to your project. Clear problem definition ensures efficient and effective solutions.</div>
                 </div>
             </div>
             <div className="UE_con_row UE_con_row_2">
             <div className="UE_con_row_box">
-                    <img src={assets.uxIcon3} alt="" />
+                    <img src={assets.uxIcon3} alt="Custom UI/UX solutions Bangalore | Invention Minds" />
                     <div className="box_heading">Ideating solutions through brainstorming</div>
                     <div className="box_description">Collaborative brainstorming sparks innovative ideas, turning challenges into opportunities. Together, we create tailored solutions that drive success.</div>
                 </div>
                 <div className="UE_con_row_box">
-                    <img src={assets.uxIcon4} alt="" />
+                    <img src={assets.uxIcon4} alt="Invention Minds innovative UI/UX design Bangalore" />
                     <div className="box_heading">Prototyping and testing to ensure designs are flawless</div>
                     <div className="box_description">Collaborative brainstorming sparks innovative ideas, turning challenges into opportunities. Together, we create tailored solutions that drive success.</div>
                 </div>
             </div>
         </div>
         <div className="UE_img">
-            <img src={assets.UserExperienceImg} alt="" />
+            <img src={assets.UserExperienceImg} alt="Leading UI/UX design firm Bangalore | Invention Minds" />
         </div>
       </div>
       <div className='services_para UserExperienceDescription'>If you’re looking to save time and elevate your digital presence, let Invention Minds provide a smooth, enjoyable and results-driven design for your product. Whether for mobile apps or websites, our focus is on providing solutions that match your business objectives while keeping the user’s experience at the core.</div>

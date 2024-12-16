@@ -28,7 +28,7 @@ const ServicesBannerDesign = (props) => {
                     <span className="stanza_2" style={stanzaColor2}>{props.stanza2}</span>
                     <span className="stanza_3" style={stanzaColor3}>{props.stanza3}</span>
                 </div>
-                <div className="bannerDesignDescription">{props.decription}</div>
+                <h1 className="bannerDesignDescription">{props.decription}</h1>
                 <div className="banner_button_container">
                     <img src={assets.star} alt="" className='small_star small_star_1' />
                     <Link style = {{textDecoration : "none"}} to = '/contact-us'><div className="bannerDesignButton">Book A Meeting</div></Link>

@@ -20,7 +20,7 @@ const SocialMedia = () => {
         stanza1="Boost Engagement with Targeted "
         stanza2=" Social Media"
         stanza3=" Strategies"
-        decription="Drive growth through impactful social media campaigns that connect and resonate with your followers."
+        decription="Comprehensive Social Media Marketing Services in Bengaluru – Invention Minds"
         smallTitle="Social Media"
       />
       {/* container 2 */}
@@ -90,7 +90,7 @@ const SocialMedia = () => {
               </div>
             </div>
             <div className="SM_img_container1">
-              <img src={assets.SmImg_1} alt="" className="SM_Images1" />
+              <img src={assets.SmImg_1} alt="Best social media marketing services in Bangalore | Invention Minds" className="SM_Images1" />
             </div>
           </div>
           <div className="SMbox_1 SMbox_2">
@@ -128,7 +128,7 @@ const SocialMedia = () => {
               </div>
             </div>
             <div className="SM_img_container2">
-              <img src={assets.SmImg_2} alt="" className="SM_Images2" />
+              <img src={assets.SmImg_2} alt="Top social media management company Bangalore | Invention Minds" className="SM_Images2" />
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ const SocialMedia = () => {
             <div className="services_para">Social media is always evolving, and so are we. We provide continuous support and adapt your strategy as needed to stay ahead of the curve.</div>
           </div>
           <div className="SM_Con2_img">
-              <img src={assets.SmImg_3} alt="" />
+              <img src={assets.SmImg_3} alt="Professional social media strategy Bangalore | Invention Minds" />
               <div className="SM_con2_img_content">
                 <div className="gradient_headings flexgap">Let’s Get Started</div>
                 <div className="services_para SM_2_para">Ready to elevate your brand’s social media presence? Contact us today to discuss how we can help you achieve your goals and stand out in the digital landscape.</div>
