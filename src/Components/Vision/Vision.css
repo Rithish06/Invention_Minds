@@ -48,7 +48,7 @@
 }
 
 .Vision{
-    background-image: url('../../assets/images/Vision.png');
+    background-image: url('../../assets/images/invention-minds-team-collaboration.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -64,7 +64,7 @@
 }
 
 .Mission{
-    background-image: url('../../assets/images/Mission.png');
+    background-image: url('../../assets/images/client-meeting-invention-minds.png');
     background-attachment: fixed;
     background-size: cover;
     height: 450px;

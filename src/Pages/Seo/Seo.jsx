@@ -20,7 +20,7 @@ const Seo = () => {
             stanza1 = "Boost Visibility with Expert "
             stanza2 = "SEO Solutions "
             stanza3 = "for Any Business"
-            decription = "Optimize your online presence with proven SEO techniques that increase rankings and grow engagement."
+            decription = "Expert SEO Services in Bengaluru – Invention Minds"
             smallTitle = "SEO For Any Business"
         />
 
@@ -33,7 +33,7 @@ const Seo = () => {
                     <div className="services_para">With a data-driven approach, we track key metrics and adjust our SEO tactics to align with search engine updates and evolving industry trends. Partner with Invention Minds to build a strong online presence and achieve measurable, lasting success through effective SEO strategies.</div>
                 </div>
                 <div className="SeoImage">
-                    <img src={assets.SeoImage} alt="" />
+                    <img src={assets.SeoImage} alt="Best SEO services in Bangalore | Invention Minds" />
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ const MobileApp = () => {
         stanza1 = "Innovative "
         stanza2 = "Mobile App Development "
         stanza3 = "for Seamless User Experiences"
-        decription = "Develop innovative mobile apps that deliver seamless user experiences across all platforms."
+        decription = "Professional Mobile App Development Services in Bengaluru – Invention Minds"
         smallTitle = "Mobile App Development"
       />
 
@@ -41,7 +41,7 @@ const MobileApp = () => {
                 <div className="services_para">Staying at the forefront of technological advancements is our hallmark. Invention Minds integrates cutting-edge technologies, such as augmented reality, ensuring that your app remains not only current but also innovative.</div>
             </div>
             <div className="MobileAppImg">
-                <img src={assets.MobileAppImg1} alt="" className='MobileAppImg1' />
+                <img src={assets.MobileAppImg1} alt="Best mobile app development services in Bangalore | Invention Minds" className='MobileAppImg1' />
             </div>
       </div>
 
@@ -53,7 +53,7 @@ const MobileApp = () => {
                 <div className="services_para">Recognizing the importance of timely delivery in the fast-paced digital landscape, we prioritise project timelines without compromising on quality. Our post-launch support guarantees that your app continues to perform optimally, with regular updates and maintenance.</div>
             </div>
             <div className="MobileAppImg">
-                <img src={assets.MobileAppImg2} alt="" className='MobileAppImg2' />
+                <img src={assets.MobileAppImg2} alt="Top mobile application development company Bangalore | Invention Minds" className='MobileAppImg2' />
             </div>
       </div>
 

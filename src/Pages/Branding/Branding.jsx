@@ -21,7 +21,7 @@ const Branding = () => {
         stanza1 = "Elevate Your "
         stanza2 = "Business Identity "
         stanza3 = "with Strategic Branding Solutions"
-        decription = "Build a strong brand identity that resonates with your audience and drives lasting success."
+        decription = "Professional Branding Services in Bengaluru – Invention Minds"
         smallTitle = "BRANDING"
       />
 
@@ -42,7 +42,7 @@ const Branding = () => {
                     </ul>
                 </div>
                 <div className="Branding_img">
-                    <img src={assets.BrandingImg1} alt="" />
+                    <img src={assets.BrandingImg1} alt="Best branding services in Bangalore | Invention Minds" />
                 </div>
             </div>
 
@@ -55,7 +55,7 @@ const Branding = () => {
                     </ul>
                 </div>
                 <div className="Branding_img">
-                    <img src={assets.BrandingImg2} alt="" />
+                    <img src={assets.BrandingImg2} alt="Top brand identity design Bangalore | Invention Minds" />
                 </div>
             </div>
             <div className="services_para services_description">Partner with Invention Minds to create a brand that sets you apart and drives your business forward!</div>

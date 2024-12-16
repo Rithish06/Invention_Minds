@@ -23,7 +23,7 @@ const About = () => {
             <div className="About_Banner_content">Your Partner for Digital Success</div>
             <div className="About_banner_description">At Invention Minds, we believe in making a positive difference for businesses by leveraging the right tools and strategies.</div>
             <div className="About_banner_container fa-fade">
-                <img src={assets.AboutContainer1Img} alt="" className="AboutBannerImg"/>
+                <img src={assets.AboutContainer1Img} alt="Invention Minds office building in Bangalore" className="AboutBannerImg"/>
             </div>
         </div>
 
@@ -42,7 +42,7 @@ const About = () => {
                     <div className="para_1">We value open communication and are always delighted to engage in friendly discussions to address questions, concerns, or ideas from our customers, aiming to reach the best decisions together. Client satisfaction is our primary driving force, and we pride ourselves on delivering promises while acknowledging and rectifying any mistakes. Upholding business ethics and trust is paramount to achieving stable, ongoing growth. The basic ideals at Invention Minds are quality over quantity, context over substance, and accuracy over production. Our commitment to achieving optimization in all processes aligns with the fundamental factors of success: Quality, Time, and Cost.</div>
                 </div>
                 <div className="box_image">
-                    <img src={assets.Astronaut} alt="" className='fa-beat-fade' />
+                    <img src={assets.Astronaut} alt="Invention Minds office building in Bangalore" className='fa-beat-fade' />
                 </div>
             </div>
         </div>

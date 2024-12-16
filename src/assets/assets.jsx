@@ -1,43 +1,43 @@
-import logo from "./images/logo.png";
+import logo from "./images/best-digital-marketing-company-in-banglore.png";
 import footerimage from "./images/footer_image.png";
-import HomeContainerImg1 from "./images/home_c2_img_1.png";
-import HomeContainerImg2 from "./images/home_c2_img_2.png";
-import HomeContainerImg3 from "./images/home_c2_img_3.png";
-import HomeContainerImg4 from "./images/home_c2_img_4.png";
-import HomeContainerImg5 from "./images/home_c2_img_5.png";
-import HomeContainerImg6 from "./images/home_c2_img_6.png";
-import HomeContainerImg7 from "./images/home_c2_img_7.png";
-import HomeContainerImg8 from "./images/home_c2_img_8.png";
-import HomeDigitalMarketing from "./images/home_digital_marketing.png";
-import HomeSEO from "./images/home_seo.png";
-import HomeWebdesign from "./images/home_webdesign.png";
-import HomeUiUx from "./images/home_ui_ux.png";
-import AboutContainer1Img from "./images/AboutUsContainer1Img.png";
-import Astronaut from "./images/Austronaut.png";
-import Mission from "./images/Mission.png";
-import Vission from "./images/Vision.png";
-import tire from "./images/tire.png";
+import HomeContainerImg1 from "./images/digital-marketing-agency-bangalore.png";
+import HomeContainerImg2 from "./images/web-development-services-bangalore.png";
+import HomeContainerImg3 from "./images/seo-experts-bangalore.png";
+import HomeContainerImg4 from "./images/social-media-marketing-bangalore.png";
+import HomeContainerImg5 from "./images/mobile-app-development-bangalore.png";
+import HomeContainerImg6 from "./images/it-consulting-services-bangalore.png";
+import HomeContainerImg7 from "./images/software-development-company-bangalore.png";
+import HomeContainerImg8 from "./images/content-marketing-services-bangalore.png";
+// import HomeDigitalMarketing from "./images/home_digital_marketing.png";
+// import HomeSEO from "./images/home_seo.png";
+// import HomeWebdesign from "./images/home_webdesign.png";
+// import HomeUiUx from "./images/home_ui_ux.png";
+import AboutContainer1Img from "./images/invention-minds-team-bangalore.png";
+import Astronaut from "./images/invention-minds-office-bangalore.png";
+import Mission from "./images/client-meeting-invention-minds.png";
+import Vission from "./images/invention-minds-team-collaboration.png";
+import tire from "./images/invention-minds-product-development-bangalore.png";
 import star from "./images/Star.png";
-import webServices from "./images/WebServices.png";
-import digitalMarketing1 from "./images/digitalMarketingImg1.png";
-import digitalMarketing2 from "./images/digitalMarketingImg2.png";
-import SmImg_1 from "./images/SMimg_1.png";
-import SmImg_2 from "./images/SMimg_2.png";
-import SmImg_3 from "./images/SMimg_3.png";
-import CreativeContentImg from "./images/creative_content_img.png";
-import SeoImage from "./images/SeoImg.png";
-import ResponsiveImage1 from "./images/responsiveDesignImg_1.png";
-import ResponsiveImage2 from "./images/responsiveDesignImg_2.png";
-import BrandingImg1 from "./images/BrandingImg1.png";
-import BrandingImg2 from "./images/BrandingImg2.png";
-import uxIcon1 from "./images/UE_icon_1.png";
-import uxIcon2 from "./images/UE_icon_2.png";
-import uxIcon3 from "./images/UE_icon_3.png";
-import uxIcon4 from "./images/UE_icon_4.png";
-import UserExperienceImg from "./images/UserExperienceImg.png";
-import MobileAppImg1 from "./images/MobileAppImg_1.png";
-import MobileAppImg2 from "./images/MobileAppImg_2.png";
-import HomeFormImage from "./images/HomeContactImg.png";
+import webServices from "./images/Best-web-development-services-in-Bangalore-Invention-Minds.png";
+import digitalMarketing1 from "./images/Best-digital-marketing-service-in-Bangalore.png";
+import digitalMarketing2 from "./images/Top-digital-marketing-agency-in-Bangalore.png";
+import SmImg_1 from "./images/best-social-media-marketing-services-in-bangalore-invention-minds.png"
+import SmImg_2 from "./images/top-social-media-management-company-bangalore-invention-minds.png";
+import SmImg_3 from "./images/professional-social-media-strategy-bangalore-invention-minds.png";
+import CreativeContentImg from "./images/top-content-creation-company-bangalore-invention-minds.png";
+import SeoImage from "./images/Best-seo-services-in-bangalore-invention-minds.png";
+import ResponsiveImage1 from "./images/best-responsive-web-design-services-in-bangalore-invention-minds.png";
+import ResponsiveImage2 from "./images/top-responsive-website-design-company-bangalore-invention-minds.png";
+import BrandingImg1 from "./images/best-branding-services-in-bangalore-invention-minds.png";
+import BrandingImg2 from "./images/top-brand-identity-design-bangalore-invention-minds.png";
+import uxIcon1 from "./images/Best-UI-UX-design-services-in-Bangalore-Invention-Minds.png";
+import uxIcon2 from "./images/professional-ux-design-agency-in-bangalore-invention-minds.png";
+import uxIcon3 from "./images/custom-ui-ux-solutions-bangalore-invention-minds.png";
+import uxIcon4 from "./images/invention-minds-innovative-ui-ux-design-bangalore.png";
+import UserExperienceImg from "./images/leading-ui-ux-design-firm-bangalore-invention-minds.png";
+import MobileAppImg1 from "./images/best-mobile-app-development-services-in-bangalore-invention-minds.png";
+import MobileAppImg2 from "./images/top-mobile-application-development-company-bangalore-invention-minds.png";
+import HomeFormImage from "./images/contact-invention-minds-bangalore.png";
 import sapience from "./images/sapience.png";
 import akshaLogo from "./images/akshaLogo.png";
 import coral from "./images/coral.png";
@@ -54,11 +54,11 @@ import contactUs_layer_2 from "./images/contactUs_layer_2.png";
 import contactUsImg from "./images/contactUsImg.png";
 import ContactUsBgMobile from "./images/ContactUsBgMobile.png";
 import contactUsMobileLayer2 from "./images/contactUsMobileLayer2.png";
-import careerQuestions from "./images/career_questions.png";
-import Career_Brain from "./images/Career_Brain.png";
-import Carrer_1_img from "./images/Carrer_1_img.png";
-import Carrer_2_img from "./images/Carrer_2_img.png";
-import Carrer_3_img from "./images/Carrer_3_img.png";
+import careerQuestions from "./images/career-opportunities-at-invention-minds-bangalore.png";
+import Career_Brain from "./images/invention-minds-job-openings-in-bangalore.png";
+import Carrer_1_img from "./images/Join-Invention-minds-team-in-bangalore.png";
+import Carrer_2_img from "./images/invention-minds-hiring-in-bangalore.png";
+import Carrer_3_img from "./images/work-with-invention-minds-bangalore.png";
 import dummyf from "./images/dummyf.png";
 import dummym from "./images/dummym.png";
 import Aaron from "./images/Aaron.png";
@@ -74,10 +74,10 @@ export const assets = {
   HomeContainerImg6,
   HomeContainerImg7,
   HomeContainerImg8,
-  HomeDigitalMarketing,
-  HomeSEO,
-  HomeWebdesign,
-  HomeUiUx,
+  // HomeDigitalMarketing,
+  // HomeSEO,
+  // HomeWebdesign,
+  // HomeUiUx,
   AboutContainer1Img,
   Astronaut,
   Mission,

@@ -70,7 +70,7 @@ const Tier = () => {
           <img
             style={TireImage}
             src={assets.tire}
-            alt=""
+            alt="Invention Minds product development services in Bangalore for innovative solutions"
             onClick={RotateFunction}
           />
           <p className="image_txt">

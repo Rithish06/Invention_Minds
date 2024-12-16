@@ -145,7 +145,8 @@ const onSubmit = (data) => {
         </form>
       </div>
       <div className="formImageContainer">
-        <img src={assets.HomeFormImage} alt=""  />
+        <img src={assets.HomeFormImage} alt="Contact Invention Minds Bangalore
+"  />
       </div>
       <ToastContainer />
     </div>

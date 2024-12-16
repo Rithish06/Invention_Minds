@@ -62,42 +62,42 @@ const Home = () => {
         <div className="container_2_images">
           <div className="container_2_slide_1">
             <div className="container_2_slide_1_images">
-              <img src={assets.HomeContainerImg1} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg2} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg3} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg4} alt="" className='container_2_images' />
+              <img src={assets.HomeContainerImg1} alt="Digital marketing agency in Bangalore offering innovative solutions" className='container_2_images' />
+              <img src={assets.HomeContainerImg2} alt="Professional web development services in Bangalore by Invention Minds" className='container_2_images' />
+              <img src={assets.HomeContainerImg3} alt="SEO experts in Bangalore providing effective search engine optimization" className='container_2_images' />
+              <img src={assets.HomeContainerImg4} alt="Social media marketing services in Bangalore to boost your online presence" className='container_2_images' />
             </div>
             <div className="container_2_slide_1_images">
-              <img src={assets.HomeContainerImg1} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg2} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg3} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg4} alt="" className='container_2_images' />
+              <img src={assets.HomeContainerImg1} alt="Digital marketing agency in Bangalore offering innovative solutions" className='container_2_images' />
+              <img src={assets.HomeContainerImg2} alt="Professional web development services in Bangalore by Invention Minds" className='container_2_images' />
+              <img src={assets.HomeContainerImg3} alt="SEO experts in Bangalore providing effective search engine optimization" className='container_2_images' />
+              <img src={assets.HomeContainerImg4} alt="Social media marketing services in Bangalore to boost your online presence" className='container_2_images' />
             </div>
             <div className="container_2_slide_1_images container_2_slide_1_images_copy">
-              <img src={assets.HomeContainerImg1} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg2} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg3} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg4} alt="" className='container_2_images' />
+              <img src={assets.HomeContainerImg1} alt="Digital marketing agency in Bangalore offering innovative solutions" className='container_2_images' />
+              <img src={assets.HomeContainerImg2} alt="Professional web development services in Bangalore by Invention Minds" className='container_2_images' />
+              <img src={assets.HomeContainerImg3} alt="SEO experts in Bangalore providing effective search engine optimization" className='container_2_images' />
+              <img src={assets.HomeContainerImg4} alt="Social media marketing services in Bangalore to boost your online presence" className='container_2_images' />
             </div>
           </div>
           <div className="container_2_slide_1 container_2_slide_2">
             <div className="container_2_slide_2_images">
-              <img src={assets.HomeContainerImg5} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg6} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg7} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg8} alt="" className='container_2_images' />
+              <img src={assets.HomeContainerImg5} alt="Mobile app development company in Bangalore creating user-friendly apps" className='container_2_images' />
+              <img src={assets.HomeContainerImg6} alt="IT consulting services in Bangalore for business growth and efficiency" className='container_2_images' />
+              <img src={assets.HomeContainerImg7} alt="Custom software development company in Bangalore delivering tailored solutions" className='container_2_images' />
+              <img src={assets.HomeContainerImg8} alt="Content marketing services in Bangalore to enhance brand visibility" className='container_2_images' />
             </div>
             <div className="container_2_slide_2_images">
-              <img src={assets.HomeContainerImg5} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg6} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg7} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg8} alt="" className='container_2_images' />
+              <img src={assets.HomeContainerImg5} alt="Mobile app development company in Bangalore creating user-friendly apps" className='container_2_images' />
+              <img src={assets.HomeContainerImg6} alt="IT consulting services in Bangalore for business growth and efficiency" className='container_2_images' />
+              <img src={assets.HomeContainerImg7} alt="Custom software development company in Bangalore delivering tailored solutions" className='container_2_images' />
+              <img src={assets.HomeContainerImg8} alt="Content marketing services in Bangalore to enhance brand visibility" className='container_2_images' />
             </div>
             <div className="container_2_slide_2_images">
-              <img src={assets.HomeContainerImg5} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg6} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg7} alt="" className='container_2_images' />
-              <img src={assets.HomeContainerImg8} alt="" className='container_2_images' />
+              <img src={assets.HomeContainerImg5} alt="Mobile app development company in Bangalore creating user-friendly apps" className='container_2_images' />
+              <img src={assets.HomeContainerImg6} alt="IT consulting services in Bangalore for business growth and efficiency" className='container_2_images' />
+              <img src={assets.HomeContainerImg7} alt="Custom software development company in Bangalore delivering tailored solutions" className='container_2_images' />
+              <img src={assets.HomeContainerImg8} alt="Content marketing services in Bangalore to enhance brand visibility" className='container_2_images' />
             </div>
           </div>
         </div>
