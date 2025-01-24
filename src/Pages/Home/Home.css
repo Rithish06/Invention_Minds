@@ -121,7 +121,6 @@
 }
 
 .home_container_1_box_text {
-    color: #101216;
     font-family: "IBM Plex Sans Condensed";
     font-size: 96px;
     font-style: italic;
@@ -133,14 +132,47 @@
     position: relative;
     z-index: 2;
     cursor: grabbing;
+    background: linear-gradient(to right, #F99B2B, #2D63BA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
 }
 
-.changebg:hover {
+.home_container_1_box_text::before{
+    content: '';
+    position: absolute;
+    right: 100%;
+    width: 0;
+    height: 100%;
+    /* background-color: #020D19; */
+    animation: animate 7s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes animate{
+    0%{
+        right: 100%;
+        width: 100%;
+        background: linear-gradient(to left, transparent 0%, #0D0D0D 30%);
+    }
+    50%{
+        right: 0;
+        width: 100%;
+    }
+    100%{
+        right: 0;
+        width: 0%;
+        background: linear-gradient(120deg, transparent 0%, #0D0D0D 30%);
+
+    }
+}
+
+/* .changebg:hover {
     transition: 1s;
     background: linear-gradient(to right, #2D63BA, #F99B2B, rgba(0, 0, 0, 0.396));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 .bottom_shadow_container {
     height: 10rem;
