@@ -42,7 +42,7 @@ const Home = () => {
           </div>
           <div className="home_container_1_box">
             <div className='home_container_1_box_text'>
-              <span className="changebg">Inv</span>
+              <span className="">Inv</span>
               <span className="changebg">ent</span>
               <span className="changebg">ion</span>
               <span className="changebg"> Min</span>
