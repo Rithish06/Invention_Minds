@@ -62,6 +62,11 @@ import Carrer_3_img from "./images/work-with-invention-minds-bangalore.png";
 import dummyf from "./images/dummyf.png";
 import dummym from "./images/dummym.png";
 import Aaron from "./images/Aaron.png";
+import webdevelopmentImg1 from "./images/webdevelopment/Web-application-development-basavanagudi-bangalore.jpg";
+import webdevelopmentImg2 from "./images/webdevelopment/Web-developers-near-me-jpnagar-bangalore.jpg";
+import webdevelopmentImg3 from "./images/webdevelopment/Website-designing-and-development-companie-mysoreroad-bangalore.jpg";
+import webdevelopmentImg4 from "./images/webdevelopment/website-developer-company- near-me​-jayanagar-bangalore.jpg";
+import webdevelopmentImg5 from "./images/webdevelopment/website-development-company-near-me​-banashankari-bangalore.jpg";
 
 export const assets = {
   logo,
@@ -127,5 +132,11 @@ export const assets = {
   Carrer_3_img,
   dummyf,
   dummym,
-  Aaron
+  Aaron,
+  webdevelopmentImg1,
+  webdevelopmentImg2,
+  webdevelopmentImg3,
+  webdevelopmentImg4,
+  webdevelopmentImg5
+  
 };

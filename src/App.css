@@ -33,6 +33,16 @@
     line-height: normal;
 }
 
+.services_para_1{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 15px;
+    line-height: normal;
+}
+
 a{
     text-decoration: none;
 }
