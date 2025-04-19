@@ -6,12 +6,12 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [locator, setLocator] = useState(0);
   const [mobileNav, setMobileNav] = useState(false);
-  const location = useLocation(); // Hook to get the current route
+  const location = useLocation();
 
   const MenuList = [
     { menu: "Home", url: "" },
     { menu: "About", url: "about" },
-    { menu: "Services", url: "services" },
+    { menu: "Services", url: "services" }, // Parent route for /services/seo, /services/ppc, etc.
     { menu: "Career", url: "career" },
     { menu: "Contact Us", url: "contact-us" },
   ];
@@ -21,13 +21,17 @@ const Navbar = () => {
     transition: "transform 0.3s ease",
   };
 
-  // Function to calculate the locator's position based on the active route
   const calculateLocatorPosition = () => {
-    const currentIndex = MenuList.findIndex(
-      (menuItem) => `/${menuItem.url}` === location.pathname
-    );
+    const currentIndex = MenuList.findIndex((menuItem) => {
+      const basePath = `/${menuItem.url}`;
+      if (menuItem.url === "") {
+        return location.pathname === "/";
+      }
+      return location.pathname.startsWith(basePath);
+    });
+
     if (currentIndex !== -1) {
-      setLocator(currentIndex * 120); // Adjust as per your layout
+      setLocator(currentIndex * 120);
     }
   };
 
@@ -39,10 +43,9 @@ const Navbar = () => {
     setMobileNav(false);
   };
 
-  // Run on location change to set locator position
   useEffect(() => {
     calculateLocatorPosition();
-  }, [location, locator]);
+  }, [location]); 
 
   return (
     <div className="navbar">
@@ -53,19 +56,23 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`menu ${mobileNav ? "shownav" : "hidenav"}`}>
-          <ul className="menu_list" onClick={autoClose}> 
+          <ul className="menu_list" onClick={autoClose}>
             {MenuList.map((menuItem, index) => (
               <NavLink
-                  exact
-                  className="linktag" to={`/${menuItem.url}`}
-                  isActive={() => `/${menuItem.url}` === location.pathname}
-                  onClick={() => setLocator(index * 100)}
-                  key={index}
-                  activeClassName="active"
+                exact={menuItem.url === ""} // Only use "exact" for Home
+                className="linktag"
+                to={`/${menuItem.url}`}
+                isActive={(match, location) => {
+                  if (menuItem.url === "") {
+                    return location.pathname === "/";
+                  }
+                  return location.pathname.startsWith(`/${menuItem.url}`);
+                }}
+                onClick={() => setLocator(index * 120)}
+                key={index}
+                activeClassName="active"
               >
-                <li className="menu_list_item">
-                  {menuItem.menu}
-                </li>
+                <li className="menu_list_item">{menuItem.menu}</li>
               </NavLink>
             ))}
           </ul>

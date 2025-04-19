@@ -5,6 +5,7 @@ import RouterOutlet from './Components/Router/Router'
 import { useLocation } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import ContactPageBanner from './Components/ContactPageBanner/ContactPageBanner';
+import {Helmet} from 'react-helmet'
 // import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {

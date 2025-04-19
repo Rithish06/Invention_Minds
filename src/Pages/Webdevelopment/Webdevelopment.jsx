@@ -88,7 +88,7 @@ const Webdevelopment = () => {
 				<div className="services_para">At Invention Minds, we specialize in mobile-first, fully responsive websites that deliver seamless experiences across all devices. As a professional website development company in Banshankari Bangalore, we offer a wide range of services, including:</div>
 				<div className="dev_list">
 					<ul className='div_list_1'>
-						<li className="dev_list_item">Custom CMS website development </li>
+						<li className="dev_list_item">Custom CMS <a href='https://blog.jetbrains.com/webstorm/2024/10/javascript-best-practices-2024/' target='_blank'>website development</a> </li>
 						<li className="dev_list_item">PHP, Python, and Django web applications</li>
 						<li className="dev_list_item">React JS and Vue.js development</li>
 					</ul>
@@ -151,7 +151,7 @@ const Webdevelopment = () => {
 						<ul className='div_list_1'>
 							<li className="dev_list_item">Specialists in responsive web design for small businesses</li>
 							<li className="dev_list_item">Expertise in SEO-friendly website design services</li>
-							<li className="dev_list_item">Advanced tech stack including React, Node.js, PHP, WordPress, Django, and more</li>
+							<li className="dev_list_item">Advanced tech stack including <a href='https://react.dev/blog/2024/12/05/react-19' target="_blank">React,</a> Node.js, PHP, WordPress, Django, and more</li>
 							<li className="dev_list_item">Affordable pricing for businesses across Banashankari and Bangalore</li>
 							<li className="dev_list_item">Dedicated support from design to deployment</li>
 						</ul>
@@ -175,7 +175,7 @@ const Webdevelopment = () => {
 						<h2 className="gradient_sub_headings">Web Application Development</h2>
 						<div className="services_para_1" >From dashboards to customer portals, our team builds secure and efficient web apps.</div>
 						<h2 className="gradient_sub_headings"> MERN and MEAN Stack Development</h2>
-						<div className="services_para_1" > Modern full-stack solutions using MongoDB, Express, React, Angular, and Node.js.</div>
+						<div className="services_para_1" > Modern full-stack solutions using MongoDB, Express, React, <a href='https://blog.angular.dev/angular-19-2-is-now-available-673ec70aea12' target="_blank">Angular,</a> and Node.js.</div>
 						<h2 className="gradient_sub_headings">SEO-Friendly Website Design Services</h2>
 						<div className="services_para_1" > Our websites are built with clean code, fast loading speeds, and optimized structure for better visibility.</div>
 						<h2 className="gradient_sub_headings">Responsive Web Design for Small Businesses</h2>
@@ -197,7 +197,7 @@ const Webdevelopment = () => {
 					faqs.map((value, index) =>
 						<div>
 							<div className='gradient_sub_headings'><b>Q{index + 1}. {value.ques}</b></div>
-							<div className="services_para" dangerouslySetInnerHTML={{__html : value.ans}}/>
+							<div className="services_para" dangerouslySetInnerHTML={{ __html: value.ans }} />
 						</div>
 					)
 				}
