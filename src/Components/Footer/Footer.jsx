@@ -161,7 +161,7 @@ const Footer = () => {
                 </div>
 
                 {/* social media links */}
-                <div className="socialMediaLinks">
+                <div className="socialMediaLinks hide_mobile">
                   <div className="social_heading">Social</div>
                   <div className="social">
                     <ul className="footer_lists">

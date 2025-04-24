@@ -151,18 +151,18 @@
 .footer_content{
     background-color: #161515;
     border-radius: 20px;
-    padding: 10% 5%;
+    padding: 10% 3%;
 }
 
 .footer_content_1{
     display: flex;
-    gap: 50px;
+    gap: 65px;
     flex-wrap: wrap;
 }
 
 .hyperLinks{
     display: flex;
-    gap: 50px;
+    gap: 65px;
     width: 560px;
 }
 
@@ -179,6 +179,7 @@
 .servicesListItems{
     display: flex;
     gap: 20px;
+    width: 112%;
 }
 
 .social_heading{
@@ -307,6 +308,10 @@
         margin-top: 20px;
     }
 
+    .servicesListItems{
+        width: 100%;
+    }
+
 }
 
 @media (max-width : 850px){
@@ -356,15 +361,15 @@
 @media (max-width : 500px){
 
     .footer{
-        height: 1600px;
+        height: 1300px;
     }
 
     .footer_background{
-        height: 1600px;
+        height: 1300px;
     }
 
     .footer_content_container{
-        height: 1300px;
+        height: 1200px;
     }
     
 
@@ -407,6 +412,10 @@
     .heading_center{
         width: 100%;
         text-align: center;
+    }
+
+    .hide_mobile{
+        display: none;
     }
 
 }
