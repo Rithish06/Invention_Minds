@@ -45,6 +45,48 @@ const Footer = () => {
     },
   ]
 
+  const services = [
+    {
+      name: "Digital Marketing",
+      url: "digital-marketing"
+    },
+    {
+      name: "Web Development",
+      url: "web-development"
+    },
+    {
+      name: "UI/UX Design",
+      url: "ui-ux-design"
+    },
+    {
+      name: "SEO",
+      url: "seo"
+    },
+    {
+      name: "Social Media",
+      url: "social-media"
+    },
+  ]
+
+  const services2 = [
+    {
+      name: "Creative Content",
+      url: "creative-content"
+    },
+    {
+      name: "Responsive Design",
+      url: "responsive-design"
+    },
+    {
+      name: "Branding",
+      url: "branding"
+    },
+    {
+      name: "Mobile App Development",
+      url: "mobile-app-development"
+    },
+  ]
+
   const social = [
     {
       linkName: "Facebook",
@@ -85,25 +127,39 @@ const Footer = () => {
               <div className="hyperLinks">
                 <div className="superlists">
                   <div className="superlist_heading">Superlist</div>
+
                   <div className="superlist">
                     {/* super list item 1 */}
-                    <ul className="footer_lists">
+                    <ul className="footer_lists superlistItem">
                       {
                         superList_1.map((list, index) => (
                           <Link key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
                         ))
                       }
                     </ul>
-                    {/* super list item 2 */}
-                    <ul className="footer_lists">
+                  </div>
+                </div>
+
+                <div className="serviceList">
+                  <div className="f_services_heading">Services</div>
+                  <div className="servicesListItems">
+                    <ul className="footer_service_lists">
                       {
-                        superList_2.map((list, index) => (
-                          <Link key={index} style={{ textDecoration: 'none' }} to={`/${list.linkUrl}`}><li className="footer_list_item">{list.linkName}</li></Link>
+                        services.map((list, index) => (
+                          <Link key={index} style={{ textDecoration: 'none' }} to={`/services/${list.url}`}><li className="footer_list_item">{list.name}</li></Link>
+                        ))
+                      }
+                    </ul>
+                    <ul className="footer_service_lists">
+                      {
+                        services2.map((list, index) => (
+                          <Link key={index} style={{ textDecoration: 'none' }} to={`/services/${list.url}`}><li className="footer_list_item">{list.name}</li></Link>
                         ))
                       }
                     </ul>
                   </div>
                 </div>
+
                 {/* social media links */}
                 <div className="socialMediaLinks">
                   <div className="social_heading">Social</div>
@@ -123,7 +179,7 @@ const Footer = () => {
 
               <div className="contact_details">
                 <div className="contact_info_heading">Contact Info</div>
-                <ul className="footer_lists">
+                <ul className="footer_lists footer_lists_address">
                   <li className="contact_lists">No. 12/1, 22nd main road, Muneshwara block, Girinagar Bengaluru, Karnataka- 560085</li>
                   <li className="contact_lists">inventionmindsblr@gmail.com​​</li>
                   <li className="contact_lists">+91 98440 05600</li>
@@ -132,7 +188,7 @@ const Footer = () => {
 
             </div>
             <div className="copyrights">
-              <p>ⓒ Invention Minds 2024</p>
+              <p>ⓒ Invention Minds 2025</p>
             </div>
           </div>
         </div>
