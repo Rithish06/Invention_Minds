@@ -25,12 +25,12 @@ const Clients = () => {
       websiteUrl: "https://dspaceinterior.in/",
       alt: "Dsapce Interior"
     },
-    {
-      imagePath: assets.coral,
-      imageClassName: "coral",
-      websiteUrl: "https://coralwomencare.com/",
-      alt: "Coral Advanced Fertility and Women's Care"
-    },
+    // {
+    //   imagePath: assets.coral,
+    //   imageClassName: "coral",
+    //   websiteUrl: "https://coralwomencare.com/",
+    //   alt: "Coral Advanced Fertility and Women's Care"
+    // },
     {
       imagePath: assets.sapience,
       imageClassName: "sapience",
@@ -89,7 +89,7 @@ const Clients = () => {
           <div className="image_container">
           {
             logos.map((logo, index) => (
-              <a href={logo.websiteUrl} key={index}><img className={logo.imageClassName} src={logo.imagePath} alt={logo.alt} /></a>
+              <a href={logo.websiteUrl} target='_blank' key={index}><img className={logo.imageClassName} src={logo.imagePath} alt={logo.alt} /></a>
             ))
           }
         </div>
