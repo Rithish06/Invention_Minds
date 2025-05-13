@@ -34,7 +34,7 @@ const Home = () => {
           <div className="home_content_container">
             <div className="greeting">Welcome to Invention Minds</div>
             <div className="container_1_heading">We Partner With You</div>
-            <div className="container_1_description">we partner with you to transform your vision into<br />  impactful digital strategies that drive success and growth.</div>
+            <div className="container_1_description">to Transform Vision into Impactful Digital Growth.</div>
             <div className="contaier_1_buttons">
               <Link to="/contact-us" style={{ textDecoration: "none" }}><button className="container_1_btn container_1_btn_1">Get Started</button></Link>
               <button className="container_1_btn container_1_btn_2" onClick={scrollToNextContainer}>Explore More</button>

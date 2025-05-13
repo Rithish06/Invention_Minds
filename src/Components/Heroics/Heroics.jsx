@@ -47,12 +47,12 @@ const Heroics = () => {
       briefProfile : "Mr. Rajesh Yadav has 14 years of experience working in the IT and Healthcare industries. He is widely renowned for his ability to strategically combine artistic strategy with business goals."
     },
 
-    {
-      name : "Meghana C",
-      designation : "HR Executive",
-      experience : "6",
-      briefProfile : "Meghana C effectively manages human resources operations to support organizational goals. Her expertise in talent acquisition, employee relations, and performance management ensures a positive and productive work environment. Meghana’s ability to align HR practices with business objectives is essential in cultivating a strong and engaged team."
-    },
+    // {
+    //   name : "Meghana C",
+    //   designation : "HR Executive",
+    //   experience : "6",
+    //   briefProfile : "Meghana C effectively manages human resources operations to support organizational goals. Her expertise in talent acquisition, employee relations, and performance management ensures a positive and productive work environment. Meghana’s ability to align HR practices with business objectives is essential in cultivating a strong and engaged team."
+    // },
 
     {
       name : "S V Reddy",
@@ -74,12 +74,12 @@ const Heroics = () => {
       experience : "8",
       briefProfile : "Ms. Tejaswini is well-known for her strategic acumen; she has successfully linked company goals with creative approaches for the past five years across a wide range of industries (Healthcare, Education, and Real estate). She successfully steers her team, which is in charge of brand design and marketing strategies for a wide range of clients."
     },
-    {
-      name : "Surya",
-      designation : "Graphic Designer",
-      experience : "9",
-      briefProfile : "A seasoned graphic designer with an impressive track record spanning 9+ years. His diverse experience encompasses the Real estate, E-Commerce, Healthcare, and Television industries, where he notably excelled as the best designer for Zee Kannada.His innate talent shines through as he seamlessly translates abstract concepts into captivating visuals. "
-    },
+    // {
+    //   name : "Surya",
+    //   designation : "Graphic Designer",
+    //   experience : "9",
+    //   briefProfile : "A seasoned graphic designer with an impressive track record spanning 9+ years. His diverse experience encompasses the Real estate, E-Commerce, Healthcare, and Television industries, where he notably excelled as the best designer for Zee Kannada.His innate talent shines through as he seamlessly translates abstract concepts into captivating visuals. "
+    // },
     {
       name : "Nithish M. K",
       designation : "UI & UX Instructor and Designer ",
@@ -108,7 +108,7 @@ const Heroics = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentDetails, setCurrentDetails] = useState(0);
-    const images = [dummyf,dummyf,dummym,SandeepSir,dummym,dummyf,dummyf,dummyf,Tejaswini,dummym,Nithish,Rithish,Keerthu,Aaron]
+    const images = [dummyf,dummyf,dummym,SandeepSir,dummym,dummyf,dummyf,Tejaswini,Nithish,Rithish,Keerthu,Aaron]
     // const pics = images.reverse()
     const updateCarousel = () => {
         const imageElements = document.querySelectorAll(".image");

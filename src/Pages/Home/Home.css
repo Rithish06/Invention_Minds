@@ -54,9 +54,9 @@
 .container_1_heading {
     color: #FFF;
     font-family: "IBM Plex Sans Condensed";
-    font-size: 96px;
+    font-size:  80px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 140px;
     letter-spacing: 1.92px;
 }
@@ -65,7 +65,7 @@
     color: #E6E6E6;
     text-align: center;
     font-family: "DM Sans";
-    font-size: 16px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 21.6px;
@@ -293,6 +293,10 @@
     .container_2_images {
         width: 200px;
     }
+
+    .container_1_heading{
+        font-size: 65px;
+    }
 }
 
 .h_form_container {
@@ -318,8 +322,12 @@
     }
 
     .container_1_heading {
-        font-size: 64px;
+        font-size: 50px;
         line-height: 100px;
+    }
+
+    .container_1_description{
+        font-size: 20px;
     }
 
     .home_container_1_box {
@@ -371,7 +379,7 @@
     }
 
     .container_1_description {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .home_container_1_box {
