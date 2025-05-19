@@ -43,6 +43,19 @@
     line-height: normal;
 }
 
+.subSubHeading{
+    background: linear-gradient(90deg, #FDBA66 0%, #FD6D71 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 15px;
+    line-height: normal;
+}
+
 a{
     text-decoration: none;
 }
@@ -67,6 +80,11 @@ a{
     .services_para{
         font-size: 12px;
         text-align: justify;
+    }
+
+    .column_services{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 

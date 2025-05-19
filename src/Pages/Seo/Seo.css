@@ -1,40 +1,71 @@
-.Seo_Container_2{
-    padding: 8%;
+.Seo_Container_2 {
+    padding: 4% 8%;
 }
 
-.services_heading{
+.text-center {
     text-align: center;
 }
 
-.SeoContentContainer{
+.SeoContentContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    margin-top: 40px;
 }
 
-.SeoImage{
+.container_margin {
+    margin-top: 65px;
+}
+
+.SeoImage {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.SeoImage img{
+.SeoImage img {
     width: 400px;
     height: auto;
+    border-radius: 10px;
 }
 
-@media (max-width : 900px ){
+.SeoLists {
+    display: flex;
+    gap: 40px;
+}
 
-    .SeoContentContainer{
+.faqMarginTop {
+    margin-top: 60px;
+}
+
+@media (max-width : 900px) {
+
+    .SeoContentContainer {
         flex-direction: column;
+    }
+
+    .faqMarginTop{
+        margin-top: 40px;
     }
 }
 
-@media (max-width : 500px ){
-    .SeoImage img{
+@media (max-width : 500px) {
+    .SeoImage img {
         width: 300px;
         height: auto;
+    }
+
+    .column_reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .SeoContentContainer{
+        gap: 50px;
+    }
+
+    .SeoLists{
+        flex-direction: column;
+        gap: 0;
     }
 }

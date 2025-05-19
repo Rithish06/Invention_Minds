@@ -34,3 +34,64 @@
 a{
   text-decoration: none;
 }
+
+.flex { 
+  display: flex;
+  align-items: center;  
+  gap: 100px;
+}
+
+.s_containerPadding {
+  padding: 2% 8%;
+}
+
+.s_paraMargin {
+  margin-top: 15px;
+}
+
+.s_image{
+  display: flex;
+  gap: 20px;
+}
+
+.s_image img{
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.services_lists{
+  display: flex;
+  gap: 40px;
+}
+
+
+@media (max-width : 890px){
+  .flex{
+      gap: 30px;
+      flex-direction: column;
+  }
+
+  .column_reverse{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+}
+
+@media (max-width : 500px){
+
+  .s_image{
+    flex-direction: column;
+  }
+  
+  .s_image img{
+    width: 300px;
+    height: auto;
+  }
+  
+  .services_lists{
+    flex-direction: column;
+    gap: 0;
+  }
+}
