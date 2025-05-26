@@ -11,7 +11,8 @@ const Navbar = () => {
   const MenuList = [
     { menu: "Home", url: "" },
     { menu: "About", url: "about" },
-    { menu: "Services", url: "services" }, // Parent route for /services/seo, /services/ppc, etc.
+    { menu: "Services", url: "services" },
+    { menu: "Product", url: "https://docminds.in/" },
     { menu: "Career", url: "career" },
     { menu: "Contact Us", url: "contact-us" },
   ];
@@ -45,7 +46,7 @@ const Navbar = () => {
 
   useEffect(() => {
     calculateLocatorPosition();
-  }, [location]); 
+  }, [location]);
 
   return (
     <div className="navbar">
@@ -57,24 +58,39 @@ const Navbar = () => {
         </div>
         <div className={`menu ${mobileNav ? "shownav" : "hidenav"}`}>
           <ul className="menu_list" onClick={autoClose}>
-            {MenuList.map((menuItem, index) => (
-              <NavLink
-                exact={menuItem.url === ""} // Only use "exact" for Home
-                className="linktag"
-                to={`/${menuItem.url}`}
-                isActive={(match, location) => {
-                  if (menuItem.url === "") {
-                    return location.pathname === "/";
-                  }
-                  return location.pathname.startsWith(`/${menuItem.url}`);
-                }}
-                onClick={() => setLocator(index * 120)}
-                key={index}
-                activeClassName="active"
-              >
-                <li className="menu_list_item">{menuItem.menu}</li>
-              </NavLink>
-            ))}
+            {MenuList.map((menuItem, index) => {
+              // Check if the URL is external
+              const isExternal = menuItem.url.startsWith('http');
+
+              return isExternal ? (
+                <a
+                  className="linktag"
+                  href={menuItem.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                >
+                  <li className="menu_list_item">{menuItem.menu}</li>
+                </a>
+              ) : (
+                <NavLink
+                  exact={menuItem.url === ""}
+                  className="linktag"
+                  to={`/${menuItem.url}`}
+                  isActive={(match, location) => {
+                    if (menuItem.url === "") {
+                      return location.pathname === "/";
+                    }
+                    return location.pathname.startsWith(`/${menuItem.url}`);
+                  }}
+                  onClick={() => setLocator(index * 120)}
+                  key={index}
+                  activeClassName="active"
+                >
+                  <li className="menu_list_item">{menuItem.menu}</li>
+                </NavLink>
+              );
+            })}
           </ul>
           <div className="nav_locator" style={locatorStyle}></div>
         </div>
