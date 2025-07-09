@@ -166,7 +166,7 @@ const ContactPageBanner = () => {
                             </div>
                             <div className="contact_flex">
                                 <LuPhoneCall className="contact_icons" />
-                                <p>+91 98440 05600</p>
+                                <a style={{textDecoration : "none", color: "#000"}} href="tel:+918026727100">08026727100</a>
                             </div>
                             <div className="contact_flex">
                                 <MdEmail className="contact_icons" />
