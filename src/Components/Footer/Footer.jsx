@@ -25,6 +25,10 @@ const Footer = () => {
       linkUrl: "career"
     },
     {
+      linkName: "Portfolio",
+      linkUrl: "Portfolio"
+    },
+    {
       linkName: "Contact Us",
       linkUrl: "contact-us"
     },
@@ -182,13 +186,15 @@ const Footer = () => {
                 <ul className="footer_lists footer_lists_address">
                   <li className="contact_lists">No. 12/1, 22nd main road, Muneshwara block, Girinagar Bengaluru, Karnataka- 560085</li>
                   <li className="contact_lists">inventionmindsblr@gmail.com​​</li>
-                  <li className="contact_lists"><a style={{textDecoration : "none", color: "#fff"}} href="tel:+918026727100">08026727100</a></li>
+                  <li className="contact_lists"><a style={{ textDecoration: "none", color: "#fff" }} href="tel:+918026727100">08026727100</a></li>
                 </ul>
               </div>
 
             </div>
             <div className="copyrights">
-              <p>ⓒ Invention Minds 2025</p>
+              <p>ⓒ Invention Minds {new Date().getFullYear()}</p> <Link to="/privacy-policy">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
