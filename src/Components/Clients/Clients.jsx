@@ -67,6 +67,12 @@ const Clients = () => {
       websiteUrl: "",
       alt: "Ashwini Ayurveda"
     },
+    {
+      imagePath: assets.vasaviLogo,
+      imageClassName: "vasaviLogo",
+      websiteUrl: "",
+      alt: "Vasavi Hospitals"
+    },
       
   ]
 
