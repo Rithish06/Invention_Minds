@@ -112,6 +112,52 @@ import uiux9 from "./images/ui-ux-design-services-in-banashankari.jpg"
 import uiux10 from "./images/user-interface-designers-in-banashankari-bangalore.jpg"
 import uiux11 from "./images/mobile-app-ui-designers-near-me.jpg"
 
+//Portfolio
+
+import zoom from './images/Portfolio/zoom.svg'
+import notion from './images/Portfolio/notion.svg'
+import slack from './images/Portfolio/slack.svg'
+import asana from './images/Portfolio/asana.svg'
+import mainimg from './images/Portfolio/main-img.svg'
+import HealthCare from './images/Portfolio/HealthCare.png'
+import Education from './images/Portfolio/Education.png'
+import RealEstate from './images/Portfolio/RealEstate.png'
+import leftline from './images/Portfolio/left.png'
+import rightline from './images/Portfolio/right.png'
+import topline from './images/Portfolio/top.png'
+import yellocolor from './images/Portfolio/yellow_color.svg'
+import Home from './images/Portfolio/Home.png'
+import rashtrotthanaleftimg from './images/Portfolio/rashtrotthanaleftimg.png'
+import rashtrotthanarightimg from './images/Portfolio/rashtrotthanarightimg.png'
+import Donation from './images/Portfolio/Donation.png'
+import Spacialties from './images/Portfolio/Spacialties.png'
+import AkshaHome from './images/Portfolio/Aksha Home.png'
+import Akshaleftimg from './images/Portfolio/Akshaleftimg.png'
+import Aksharightimg from './images/Portfolio/Aksharightimg.png'
+import ZionHomepage from './images/Portfolio/Zion Home page.png'
+import Zionleftimg from './images/Portfolio/Zionleftimg.png'
+import Zionrightimg from './images/Portfolio/Zionrightimg.png'
+import Zion from './images/Portfolio/Zion.png'
+import sankalpa from './images/Portfolio/sankalpa.png'
+import diyaanvi from './images/Portfolio/diyaanvi.png' 
+import Diyaanvihomepage from './images/Portfolio/Diyaanvihomepage.png'
+import Diyaanvileftimg from './images/Portfolio/Diyaanvileftimg.png'
+import Diyaanvirightimg from './images/Portfolio/Diyaanvirightimg.png'
+import Sankalpahomepage from './images/Portfolio/Sankalpahomepage.png'
+import Sankalpaleftimg from './images/Portfolio/Sankalpaleftimg.png'
+import Sankalparightimg from './images/Portfolio/Sankalparightimg.png'
+import Sapienshomepage from './images/Portfolio/Sapienshomepage.png'
+import Sapiensleftimg from './images/Portfolio/Sapiensleftimg.png'
+import Sapiensrightimg from './images/Portfolio/Sapiensrightimg.png'
+import dspaceleftimg from './images/Portfolio/dspaceleftimg.png'
+import dspacehomepage from './images/Portfolio/dspacehomepage.png'
+import dspacerightimg from './images/Portfolio/dspacerightimg.png'
+import ivfleftimg from './images/Portfolio/ivfleftimg.png'
+import ivfhomepage from './images/Portfolio/ivfhomepage.png'
+import ivfrightimg from './images/Portfolio/ivfrightimg.png'
+import vasaviLogo from './images/vasavi-new-logo.png'
+
+
 export const assets = {
   logo,
   footerimage,
@@ -224,4 +270,47 @@ export const assets = {
   uiux9,
   uiux10,
   uiux11,
+  webdevelopmentImg5,
+  asana,
+  slack,
+  notion,
+  zoom,
+  mainimg,
+  HealthCare,
+  Education,
+  RealEstate,
+  leftline,
+  rightline,
+  topline,
+  yellocolor,
+  ZionHomepage,
+  AkshaHome,
+  Spacialties,
+  Donation,
+  Home,
+  diyaanvi,
+  Zion,
+  sankalpa,
+  rashtrotthanaleftimg,
+  rashtrotthanarightimg,
+  Akshaleftimg,
+  Aksharightimg,
+  Zionleftimg,
+  Zionrightimg,
+  Diyaanvihomepage,
+  Diyaanvileftimg,
+  Diyaanvirightimg,
+  Sankalpahomepage,
+  Sankalpaleftimg,
+  Sankalparightimg,
+  Sapienshomepage,
+  Sapiensleftimg,
+  Sapiensrightimg,
+  dspaceleftimg,
+  dspacehomepage,
+  dspacerightimg,
+  ivfhomepage,
+  ivfleftimg,
+  ivfrightimg,
+  vasaviLogo
 };
