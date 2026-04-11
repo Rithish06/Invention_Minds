@@ -66,8 +66,8 @@ const Webdevelopment = () => {
 	return (
 		<div className='servicesPage'>
 			<Helmet>
-				<title>Top Web Development Services | Custom Websites for Business Growth</title>
-				<meta name='description' content="Boost your online presence with Invention Minds' expert web development services. We build responsive, SEO-friendly, and custom websites tailored to your business." />
+				<title>Web Development Services - Get a Professional Website Built</title>
+				<meta name='description' content="Need a website that actually brings in customers? We build fast, mobile-friendly websites designed to rank on Google & turn visitors into real leads." />
 				<meta name='keywords' content="Web Development Services, Custom Website Design, Responsive Web Design, SEO-Friendly Websites,  Business Website Development, Professional Web Development, Best Web Development Company, E-Commerce Website Development, Mobile-Friendly Web Solutions, Website Development for Business Growth" />
 			</Helmet>
 

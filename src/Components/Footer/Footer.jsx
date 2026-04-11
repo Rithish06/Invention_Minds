@@ -24,10 +24,10 @@ const Footer = () => {
       linkName: "Career",
       linkUrl: "career"
     },
-    {
-      linkName: "Portfolio",
-      linkUrl: "Portfolio"
-    },
+    // {
+    //   linkName: "Portfolio",
+    //   linkUrl: "Portfolio"
+    // },
     {
       linkName: "Contact Us",
       linkUrl: "contact-us"

@@ -1,5 +1,5 @@
 import React from "react";
-import "./SocialMedia.css";
+// import "./SocialMedia.css";
 import ServicesBannerDesign from "../../Components/ServicesBannerDesign/ServicesBannerDesign";
 import { assets } from "../../assets/assets";
 import { Helmet } from "react-helmet";
@@ -45,8 +45,8 @@ const SocialMedia = () => {
         <div className="servicesPage">
             {/* meta title and description */}
             <Helmet>
-                <title>Social Media Marketing Services in Bengaluru | Invention Minds</title>
-                <meta name="description" content="Boost your brand's online presence with Invention Minds' expert social media marketing services in Bengaluru. Engage your audience and drive growth today." />
+                <title>Social Media Marketing Services - Grow Your Business Online</title>
+                <meta name="description" content="Struggling to get noticed on Instagram, Facebook or TikTok? Our social media marketing services grow your followers, boost engagement & turn views into real paying customers." />
                 <meta name="keywords" content="Social Media Marketing Services, Social Media Management, Social Media Strategy, Social Media Advertising, Social Media Optimization, Social Media Campaigns, Social Media Consulting, Social Media Analytics, Social Media Engagement, Social Media Branding" />
             </Helmet>
             <ServicesBannerDesign
