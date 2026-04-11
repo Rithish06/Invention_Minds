@@ -70,7 +70,7 @@ const Clients = () => {
     {
       imagePath: assets.vasaviLogo,
       imageClassName: "vasaviLogo",
-      websiteUrl: "",
+      websiteUrl: "https://vasavihospitals.com/",
       alt: "Vasavi Hospitals"
     },
       

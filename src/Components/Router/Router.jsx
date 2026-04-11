@@ -14,8 +14,9 @@ import Branding from '../../Pages/Branding/Branding';
 import MobileApp from '../../Pages/MobileApp/MobileApp';
 import ContactUs from '../../Pages/ContactUs/ContactUs';
 import Career from '../../Pages/Career/Career';
-import Portfolio from '../../Pages/Portfolio/Portfolio';
+// import Portfolio from '../../Pages/Portfolio/Portfolio';
 import PrivacyPolicy from '../../Pages/PrivacyPolicy/PrivacyPolicy';
+import Products from '../../Pages/Products/Products';
 
 const RouterOutlet = () => {
   return (
@@ -24,9 +25,10 @@ const RouterOutlet = () => {
          <Route path='/' element={<Home/>} />
          <Route path='/about' element={<About/>} />
          <Route path='/services' element={<Services/>} />
+         <Route path='/products' element={<Products/>} />
          <Route path='/contact-us' element={<ContactUs/>} />
          <Route path='/career' element={<Career/>} />
-         <Route path='/Portfolio' element={<Portfolio/>} />
+         {/* <Route path='/Portfolio' element={<Portfolio/>} /> */}
          <Route path='/services' >
             <Route path='seo' element = {<Seo />}/>
             <Route path='digital-marketing' element = {<DigitalMarketing />}/>
@@ -39,7 +41,7 @@ const RouterOutlet = () => {
             <Route path='mobile-app-development' element = {<MobileApp />}/>
          </Route>
 
-         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+         <Route path="/privacy" element={<PrivacyPolicy />} />
               
       </Routes>
     </>

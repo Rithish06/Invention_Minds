@@ -12,7 +12,7 @@ const Navbar = () => {
     { menu: "Home", url: "" },
     { menu: "About", url: "about" },
     { menu: "Services", url: "services" },
-    { menu: "Product", url: "https://docminds.in/" },
+    { menu: "Product", url: "products" },
     { menu: "Career", url: "career" },
     { menu: "Contact Us", url: "contact-us" },
   ];

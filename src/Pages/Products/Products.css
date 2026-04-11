@@ -1,0 +1,1048 @@
+/* ============================================
+   PRODUCTS PAGE - HERO SECTION
+   ============================================ */
+
+.products_hero {
+  min-height: 100vh;
+  background: #020D19;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 100px 8% 60px;
+}
+
+.products_hero_bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.products_hero_orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: orbFloat 8s ease-in-out infinite;
+}
+
+.products_hero_orb_1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #CC6906 0%, transparent 70%);
+  top: -10%;
+  left: -5%;
+  animation-delay: 0s;
+}
+
+.products_hero_orb_2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #2e86c1 0%, transparent 70%);
+  top: 50%;
+  right: -5%;
+  animation-delay: -3s;
+}
+
+.products_hero_orb_3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #00a23d 0%, transparent 70%);
+  bottom: -5%;
+  left: 30%;
+  animation-delay: -5s;
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+.products_hero_grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridShift 20s linear infinite;
+}
+
+@keyframes gridShift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+
+.products_hero_content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.products_hero_badge {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(253, 186, 102, 0.15), rgba(253, 109, 113, 0.15));
+  border: 1px solid rgba(253, 186, 102, 0.3);
+  color: #FDBA66;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.products_hero_title {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 64px;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.products_hero_gradient {
+  background: linear-gradient(90deg, #FDBA66, #FD6D71, #FDBA66);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.products_hero_subtitle {
+  font-family: "DM Sans";
+  font-size: 18px;
+  color: #a0aec0;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* ===== HERO PRODUCT CARDS (3D) ===== */
+
+.products_hero_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+  perspective: 1000px;
+}
+
+.products_hero_card {
+  padding: 40px 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.products_hero_card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.products_hero_card:hover::before {
+  opacity: 1;
+}
+
+.products_hero_card:hover {
+  transform: perspective(1000px) translateZ(40px) scale(1.03) !important;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(253, 186, 102, 0.1);
+}
+
+.products_hero_card_active {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(253, 186, 102, 0.15);
+}
+
+.products_hero_card_icon {
+  font-size: 40px;
+  color: #FFF;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+}
+
+.products_hero_card_name {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.products_hero_card_tagline {
+  font-family: "DM Sans";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.products_hero_card_arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 14px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.products_hero_card:hover .products_hero_card_arrow {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Scroll Indicator */
+.products_hero_scroll_indicator {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "DM Sans";
+  font-size: 12px;
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+.products_hero_scroll_mouse {
+  width: 24px;
+  height: 38px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  position: relative;
+}
+
+.products_hero_scroll_wheel {
+  width: 4px;
+  height: 8px;
+  background: #FDBA66;
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollWheel 2s ease-in-out infinite;
+}
+
+@keyframes scrollWheel {
+  0%, 100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 0.3; transform: translateX(-50%) translateY(14px); }
+}
+
+/* ============================================
+   PRODUCT SECTION
+   ============================================ */
+
+.product_section {
+  background: #020D19;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.product_section_visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== PRODUCT HEADER ===== */
+
+.product_header {
+  position: relative;
+  padding: 100px 8%;
+  overflow: hidden;
+}
+
+.product_header_bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+}
+
+.product_header_content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.product_number {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 120px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.04);
+  line-height: 1;
+  margin-bottom: -30px;
+}
+
+.product_icon_3d {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #FFF;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: iconFloat 4s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0) rotateY(0deg); }
+  25% { transform: translateY(-8px) rotateY(5deg); }
+  75% { transform: translateY(4px) rotateY(-5deg); }
+}
+
+.product_name {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 56px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.product_tagline_badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid;
+  border-radius: 20px;
+  font-family: "DM Sans";
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.product_description {
+  font-family: "DM Sans";
+  font-size: 16px;
+  color: #a0aec0;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 540px;
+}
+
+.product_cta_btn {
+  padding: 14px 36px;
+  border: none;
+  border-radius: 40px;
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product_cta_btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+}
+
+.product_cta_btn i {
+  transition: transform 0.3s;
+}
+
+.product_cta_btn:hover i {
+  transform: translateX(5px);
+}
+
+/* ===== STATS ===== */
+
+.product_header_right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_stats_container {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.product_stat_card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px 28px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: statCardIn 0.6s ease-out both;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.product_section_visible .product_stat_card {
+  animation: statCardIn 0.6s ease-out both;
+}
+
+@keyframes statCardIn {
+  from { opacity: 0; transform: translateY(30px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.product_stat_card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.product_stat_number {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.product_stat_label {
+  font-family: "DM Sans";
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Floating shapes */
+
+.product_floating_shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.product_floating_shape_1 {
+  width: 200px;
+  height: 200px;
+  top: -30px;
+  right: -20px;
+  animation: shapeFloat1 6s ease-in-out infinite;
+}
+
+.product_floating_shape_2 {
+  width: 120px;
+  height: 120px;
+  bottom: -20px;
+  left: 10px;
+  animation: shapeFloat2 8s ease-in-out infinite;
+}
+
+.product_floating_shape_3 {
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  right: 30%;
+  background: transparent !important;
+  border: 2px solid;
+  opacity: 0.15;
+  animation: shapeFloat3 7s ease-in-out infinite;
+}
+
+@keyframes shapeFloat1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-20px, 20px) rotate(180deg); }
+}
+
+@keyframes shapeFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(15px, -15px) scale(1.2); }
+}
+
+@keyframes shapeFloat3 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(10px, -20px) rotate(90deg); }
+}
+
+/* ============================================
+   FEATURES GRID
+   ============================================ */
+
+.product_features_section {
+  padding: 60px 8% 80px;
+}
+
+.product_features_title {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 42px;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product_features_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product_feature_card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  animation: featureCardIn 0.6s ease-out both;
+}
+
+.product_section_visible .product_feature_card {
+  animation: featureCardIn 0.6s ease-out both;
+}
+
+@keyframes featureCardIn {
+  from { opacity: 0; transform: translateY(40px) rotateX(10deg); }
+  to { opacity: 1; transform: translateY(0) rotateX(0deg); }
+}
+
+.product_feature_card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent, rgba(255, 255, 255, 0.2));
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.product_feature_glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0;
+  bottom: -50px;
+  right: -50px;
+  transition: opacity 0.4s;
+}
+
+.product_feature_card:hover .product_feature_glow {
+  opacity: 0.15;
+}
+
+.product_feature_icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #FFF;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s;
+}
+
+.product_feature_card:hover .product_feature_icon {
+  transform: scale(1.1) rotateY(10deg);
+}
+
+.product_feature_title {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.product_feature_desc {
+  font-family: "DM Sans";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.7;
+}
+
+/* ============================================
+   HIGHLIGHTS SECTION
+   ============================================ */
+
+.product_highlights_section {
+  padding: 60px 8% 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.product_highlights_title {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 32px;
+}
+
+.product_highlights_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.product_highlight_item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s;
+  animation: highlightIn 0.5s ease-out both;
+}
+
+.product_section_visible .product_highlight_item {
+  animation: highlightIn 0.5s ease-out both;
+}
+
+@keyframes highlightIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.product_highlight_item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateX(5px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.product_highlight_check {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.product_highlight_item span {
+  font-family: "DM Sans";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ===== 3D CUBE ===== */
+
+.product_highlights_visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 600px;
+}
+
+.product_3d_cube {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: cubeRotate 12s linear infinite;
+}
+
+@keyframes cubeRotate {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  25% { transform: rotateX(90deg) rotateY(90deg); }
+  50% { transform: rotateX(180deg) rotateY(180deg); }
+  75% { transform: rotateX(270deg) rotateY(270deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.cube_face {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--cube-color, rgba(255,255,255,0.15));
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.cube_front  { transform: translateZ(90px); }
+.cube_back   { transform: rotateY(180deg) translateZ(90px); }
+.cube_right  { transform: rotateY(90deg) translateZ(90px); }
+.cube_left   { transform: rotateY(-90deg) translateZ(90px); }
+.cube_top    { transform: rotateX(90deg) translateZ(90px); }
+.cube_bottom { transform: rotateX(-90deg) translateZ(90px); }
+
+/* ============================================
+   DIVIDER
+   ============================================ */
+
+.product_divider {
+  padding: 0 8%;
+}
+
+.product_divider_line {
+  height: 2px;
+  opacity: 0.2;
+  border-radius: 1px;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.products_cta_section {
+  padding: 100px 8%;
+  position: relative;
+  overflow: hidden;
+  background: #020D19;
+}
+
+.products_cta_bg {
+  position: absolute;
+  inset: 0;
+}
+
+.products_cta_orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.products_cta_orb_1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #CC6906 0%, transparent 70%);
+  top: -30%;
+  right: -10%;
+  opacity: 0.15;
+}
+
+.products_cta_orb_2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #2e86c1 0%, transparent 70%);
+  bottom: -30%;
+  left: -10%;
+  opacity: 0.1;
+}
+
+.products_cta_content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.products_cta_title {
+  font-family: "IBM Plex Sans Condensed";
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.products_cta_subtitle {
+  font-family: "DM Sans";
+  font-size: 18px;
+  color: #a0aec0;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.products_cta_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.products_cta_btn_primary {
+  padding: 16px 44px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #FDBA66, #FD6D71);
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 40px rgba(253, 109, 113, 0.3);
+}
+
+.products_cta_btn_primary:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 20px 60px rgba(253, 109, 113, 0.4);
+}
+
+.products_cta_btn_primary i {
+  transition: transform 0.3s;
+}
+
+.products_cta_btn_primary:hover i {
+  transform: translateX(5px);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1200px) {
+  .products_hero_title {
+    font-size: 50px;
+  }
+
+  .products_hero_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product_name {
+    font-size: 44px;
+  }
+
+  .product_features_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products_hero {
+    padding: 120px 5% 60px;
+  }
+
+  .products_hero_cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .products_hero_title {
+    font-size: 38px;
+  }
+
+  .products_hero_subtitle {
+    font-size: 16px;
+  }
+
+  .product_header_content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product_name {
+    font-size: 36px;
+  }
+
+  .product_number {
+    font-size: 80px;
+    margin-bottom: -20px;
+  }
+
+  .product_stats_container {
+    justify-content: center;
+  }
+
+  .product_features_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product_highlights_section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .product_highlights_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product_highlights_visual {
+    order: -1;
+  }
+
+  .product_3d_cube {
+    width: 140px;
+    height: 140px;
+  }
+
+  .cube_face {
+    width: 140px;
+    height: 140px;
+    font-size: 36px;
+  }
+
+  .cube_front  { transform: translateZ(70px); }
+  .cube_back   { transform: rotateY(180deg) translateZ(70px); }
+  .cube_right  { transform: rotateY(90deg) translateZ(70px); }
+  .cube_left   { transform: rotateY(-90deg) translateZ(70px); }
+  .cube_top    { transform: rotateX(90deg) translateZ(70px); }
+  .cube_bottom { transform: rotateX(-90deg) translateZ(70px); }
+
+  .products_cta_title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .products_hero {
+    padding: 100px 4% 50px;
+  }
+
+  .products_hero_title {
+    font-size: 28px;
+  }
+
+  .products_hero_badge {
+    font-size: 11px;
+    padding: 6px 16px;
+  }
+
+  .products_hero_cards {
+    max-width: 100%;
+  }
+
+  .products_hero_card {
+    padding: 28px 22px;
+  }
+
+  .product_header {
+    padding: 60px 5%;
+  }
+
+  .product_name {
+    font-size: 28px;
+  }
+
+  .product_number {
+    font-size: 60px;
+  }
+
+  .product_stat_card {
+    padding: 20px 18px;
+  }
+
+  .product_stat_number {
+    font-size: 36px;
+  }
+
+  .product_features_section {
+    padding: 40px 5% 60px;
+  }
+
+  .product_features_title {
+    font-size: 30px;
+  }
+
+  .product_feature_card {
+    padding: 24px 20px;
+  }
+
+  .product_highlights_section {
+    padding: 40px 5% 60px;
+  }
+
+  .product_highlights_title {
+    font-size: 26px;
+  }
+
+  .products_cta_section {
+    padding: 60px 5%;
+  }
+
+  .products_cta_title {
+    font-size: 26px;
+  }
+
+  .products_cta_subtitle {
+    font-size: 15px;
+  }
+
+  .products_cta_btn_primary {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .product_3d_cube {
+    width: 110px;
+    height: 110px;
+  }
+
+  .cube_face {
+    width: 110px;
+    height: 110px;
+    font-size: 28px;
+    border-radius: 14px;
+  }
+
+  .cube_front  { transform: translateZ(55px); }
+  .cube_back   { transform: rotateY(180deg) translateZ(55px); }
+  .cube_right  { transform: rotateY(90deg) translateZ(55px); }
+  .cube_left   { transform: rotateY(-90deg) translateZ(55px); }
+  .cube_top    { transform: rotateX(90deg) translateZ(55px); }
+  .cube_bottom { transform: rotateX(-90deg) translateZ(55px); }
+}
