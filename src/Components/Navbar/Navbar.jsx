@@ -14,6 +14,7 @@ const Navbar = () => {
     { menu: "Services", url: "services" },
     { menu: "Product", url: "products" },
     { menu: "Career", url: "career" },
+    // { menu: "Portfolio", url: "Portfolio" },
     { menu: "Contact Us", url: "contact-us" },
   ];
 

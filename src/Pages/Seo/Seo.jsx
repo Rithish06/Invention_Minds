@@ -42,8 +42,8 @@ const Seo = () => {
         <div className='servicesPage'>
             {/* meta title and description */}
             <Helmet>
-                <title>Professional SEO Services | Boost Your Website Rankings with Invention Minds</title>
-                <meta name='description' content="Get top-notch SEO services from Invention Minds. Improve your website's visibility, drive traffic, and grow your business with expert SEO strategies." />
+                <title>SEO Services - Get Your Business Found on Google Today</title>
+                <meta name='description' content="Is your website invisible on Google? Our SEO services help your business rank higher in search results, attract more local customers & grow your traffic - without paying for ads." />
                 <meta name='keywords' content="Professional SEO services, Search engine optimization, Website ranking improvement, Increase organic traffic, SEO experts near me, On-page and off-page SEO, Local SEO services, Best SEO agency, Affordable SEO packages, Digital marketing and SEO, SEO strategies for business growth, Keyword research and optimization, Google ranking services, E-commerce SEO services, Improve website visibility" />
             </Helmet>
             <ServicesBannerDesign
