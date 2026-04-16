@@ -26,19 +26,19 @@ const Heroics = () => {
       briefProfile: "Ramya, as a Partner, contributes significantly to the direction and success of our company. With ten years of experience, she blends industry expertise with a focus on innovation. Ramya’s collaborative approach and strong problem-solving abilities have been key in fostering long-term relationships with our clients and partners."
     },
 
-    {
-      name: "Prakash K",
-      designation: "Director",
-      experience: "37",
-      briefProfile: 'Mr. Prakash is the senior and most highly qualified person with a career spanning 36 years in periodicals, IT, healthcare, educational institutions, automobiles, etc. His competence areas include brand development, project management, content editing, and general operational management. He truly adores developing development plans for both new companies and well-established firms.'
-    },
+    // {
+    //   name: "Prakash K",
+    //   designation: "Director",
+    //   experience: "37",
+    //   briefProfile: 'Mr. Prakash is the senior and most highly qualified person with a career spanning 36 years in periodicals, IT, healthcare, educational institutions, automobiles, etc. His competence areas include brand development, project management, content editing, and general operational management. He truly adores developing development plans for both new companies and well-established firms.'
+    // },
 
-    {
-      name: "Sandeep Kumar P",
-      designation: "Head of Business & Strategies",
-      experience: "18",
-      briefProfile: "For 18 years, Mr.Sandeep Kumar P worked in the healthcare, education, and information technology sectors. He is well renowned for his strategic inventiveness in fusing creative strategy with commercial objectives. Today, he effectively oversees brand development and marketing plans for several clients."
-    },
+    // {
+    //   name: "Sandeep Kumar P",
+    //   designation: "Head of Business & Strategies",
+    //   experience: "18",
+    //   briefProfile: "For 18 years, Mr.Sandeep Kumar P worked in the healthcare, education, and information technology sectors. He is well renowned for his strategic inventiveness in fusing creative strategy with commercial objectives. Today, he effectively oversees brand development and marketing plans for several clients."
+    // },
 
     {
       name: "Rajesh Yadav N",
@@ -63,9 +63,9 @@ const Heroics = () => {
 
     {
       name: "Deepashri",
-      designation: "Co-ordinator",
+      designation: "Head of Business & Strategies",
       experience: "6",
-      briefProfile: "With six years of experience, Deepashri plays a crucial role in ensuring seamless coordination across all our projects. Her expertise in organizing tasks, managing schedules, and facilitating effective communication is vital to our team's operational efficiency and success."
+      briefProfile: "With six years of experience, Deepashri worked in the healthcare, education, and information technology sectors. She is well renowned for her strategic inventiveness in fusing creative strategy with commercial objectives. Today, she effectively oversees brand development and marketing plans for several clients."
     },
 
     {
@@ -116,11 +116,12 @@ const Heroics = () => {
       experience: "3",
       briefProfile: "Ms. Veda V is a creative and detail-oriented Graphic Designer with over three years of experience in visual communication and digital design. Skilled in Adobe Creative Suite, she specializes in creating impactful branding, marketing and social media designs that align with the organization’s vision. Her innovative approach and strong aesthetic sense help turn ideas into meaningful visual stories."
     },
+
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentDetails, setCurrentDetails] = useState(0);
-  const images = [dummyf, dummyf, dummym, SandeepSir, dummym, dummyf, dummyf, Tejaswini, Nithish, Rithish, Keerthu,dummym,dummyf]
+  const images = [dummyf, dummyf, dummym, dummyf, dummyf, Tejaswini, Nithish, Rithish, Keerthu,dummym,dummyf]
   // const pics = images.reverse()
   const updateCarousel = () => {
     const imageElements = document.querySelectorAll(".image");
