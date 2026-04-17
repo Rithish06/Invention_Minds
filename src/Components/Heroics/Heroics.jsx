@@ -116,12 +116,35 @@ const Heroics = () => {
       experience: "3",
       briefProfile: "Ms. Veda V is a creative and detail-oriented Graphic Designer with over three years of experience in visual communication and digital design. Skilled in Adobe Creative Suite, she specializes in creating impactful branding, marketing and social media designs that align with the organization’s vision. Her innovative approach and strong aesthetic sense help turn ideas into meaningful visual stories."
     },
-
+    {
+      name: "Girish V",
+      designation: "Graphic Designer",
+      experience: "2",
+      briefProfile: "Girish V is a creative visual designer and video editor with a strong focus on precision and storytelling. He is proficient in Adobe Creative Suite and other editing tools, producing engaging branding materials, marketing creatives and dynamic video content aligned with organizational goals. With a keen eye for detail, composition and motion, he transforms ideas into compelling visuals that communicate messages clearly and effectively."
+    },
+    {
+      name: "Yashashwini R",
+      designation: "Frontend Developer",
+      experience: "4",
+      briefProfile: "Yashashwini is a passionate web developer with a strong foundation in frontend development, focused on building responsive and user-friendly websites that transform ideas into engaging digital experiences. She has hands-on experience with core technologies such as HTML, CSS and JavaScript, along with modern frameworks and tools used to create clean, efficient and scalable user interfaces."
+    },
+    {
+      name: "Manikanta",
+      designation: "Full Stack Developer",
+      experience: "2",
+      briefProfile: "Manikanta is an aspiring Full Stack Developer with practical experience in building web applications using Angular and Node.js. He is skilled in both frontend and backend development, including API design and implementation. He has experience in MySQL and backend architecture and follows clean code principles to build efficient and high-performing applications."
+    },
+    {
+      name: "Prema V",
+      designation: "Full Stack Developer",
+      experience: "2",
+      briefProfile: "Prema V is a Full-Stack Developer with a strong foundation in building modern web applications. She has hands-on knowledge of technologies such as HTML, CSS, JavaScript, React.js, Node.js and databases like MySQL and MongoDB. She is passionate about learning new technologies and applying them to real-world projects, with a focus on building efficient and user-friendly solutions."
+    },
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentDetails, setCurrentDetails] = useState(0);
-  const images = [dummyf, dummyf, dummym, dummyf, dummyf, Tejaswini, Nithish, Rithish, Keerthu,dummym,dummyf]
+  const images = [dummyf, dummyf, dummym, SandeepSir, dummyf, Tejaswini, Nithish, Rithish, Keerthu,dummym,dummyf,Aaron,Tejaswini,Aaron,dummyf]
   // const pics = images.reverse()
   const updateCarousel = () => {
     const imageElements = document.querySelectorAll(".image");
